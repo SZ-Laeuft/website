@@ -6,14 +6,14 @@ export default function Navbar() {
             <nav
                 className="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
                 <div className="mb-2 sm:mb-0">
-                    <a href="#" className="text-2xl no-underline hover:text-blue-800 hover:bg-blue-200 rounded">Home</a>
+                    <a href="/" className="text-2xl no-underline hover:text-blue-800 hover:bg-blue-200 rounded">Home</a>
                 </div>
                 <div>
-                    <a href="#" className="text-lg no-underline  hover:text-blue-800 hover:bg-blue-200 rounded ml-10">Voranmeldung</a>
-                    <a href="#" className="text-lg no-underline  hover:text-blue-800 hover:bg-blue-200 rounded ml-10">Statistik</a>
-                    <a href="#" className="text-lg no-underline  hover:text-blue-800 hover:bg-blue-200 rounded ml-10">Galarie</a>
-                    <a href="#" className="text-lg no-underline  hover:text-blue-800 hover:bg-blue-200 rounded ml-10">Startzeit</a>
-                    <a href="#" className="text-lg no-underline  hover:text-blue-800 hover:bg-blue-200 rounded ml-10">Team</a>
+                    <a href="/Voranmeldung" className="text-lg no-underline  hover:text-blue-800 hover:bg-blue-200 rounded ml-10">Voranmeldung</a>
+                    <a href="/Statistik" className="text-lg no-underline  hover:text-blue-800 hover:bg-blue-200 rounded ml-10">Statistik</a>
+                    <a href="/Galarie" className="text-lg no-underline  hover:text-blue-800 hover:bg-blue-200 rounded ml-10">Galarie</a>
+                    <a href="/Startzeit" className="text-lg no-underline  hover:text-blue-800 hover:bg-blue-200 rounded ml-10">Startzeit</a>
+                    <a href="/Team" className="text-lg no-underline  hover:text-blue-800 hover:bg-blue-200 rounded ml-10">Team</a>
                 </div>
             </nav>
         </div>
