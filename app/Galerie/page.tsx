@@ -6,7 +6,7 @@ export default function Home() {
       <>
           <Navbar/>
           <div className="container max-w-screen-2xl m-auto mt-3 p-3">
-              <h1 className="text-9xl font-black text-left">Home SZ-LÄUFTT 2025</h1>
+              <h1 className="text-9xl font-black text-left">Galarie SZ-LÄUFTT 2025</h1>
           </div>
       </>
   );
