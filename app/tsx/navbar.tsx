@@ -29,7 +29,7 @@ export default function Navbar() {
                     }`}
                 >
                     Statistik
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-200 transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-blue-500 transition-all duration-300 group-hover:w-full rounded opacity-75"></span>
                 </Link>
                 <Link
                     href="/Galerie"
