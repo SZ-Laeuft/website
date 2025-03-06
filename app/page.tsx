@@ -9,7 +9,7 @@ export default function Home() {
         <>
             <Navbar />
             <div
-                className="container max-w-screen-2xl m-auto p-3 bg-cover bg-center pt-24"
+                className="p-3 bg-cover bg-center pt-24 w-screen h-auto"
                 style={{
                     backgroundImage: `url(${StadthalleImage.src})`,
                     height: '600px',
