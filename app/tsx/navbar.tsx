@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 export default function Navbar() {
     const pathname = usePathname();
-    const [isOpen, setIsOpen] = useState(false); // State to manage burger menu open/close
+    const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
