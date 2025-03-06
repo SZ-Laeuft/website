@@ -10,13 +10,14 @@ export default function Home() {
         <>
             <Navbar />
             <div
-                className="p-3 bg-cover bg-center pt-24 w-screen h-auto"
+                className="relative p-3 bg-cover bg-center pt-36 w-screen min-h-[600px]"
                 style={{
                     backgroundImage: `url(${StadthalleImage.src})`,
-                    height: '600px',
                 }}
             >
-                <div className="flex flex-col md:flex-row justify-between items-center h-full">
+
+
+            <div className="flex flex-col md:flex-row justify-between items-center h-full ">
                     <motion.h1
                         className="text-9xl font-black text-white pl-8 md:pl-40 drop-shadow-md"
                         initial={{ opacity: 0, y: 50 }}
