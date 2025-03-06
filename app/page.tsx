@@ -21,7 +21,7 @@ export default function Home() {
                         <span className="block">LÄUFT</span>
                     </h1>
                     <div className="relative mt-4 md:mt-0 md:pr-20">
-                        <div className="bg-white rounded-full p-3">
+                        <div className="bg-white rounded-full p-4">
                             <Image
                                 src={Logo}
                                 alt="Logo"
