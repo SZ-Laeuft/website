@@ -7,7 +7,7 @@ export default function Navbar() {
     const pathname = usePathname();
 
     return (
-        <nav className="fixed flex items-center justify-between py-6 px-10 bg-white shadow w-full">
+        <nav className="fixed flex z-50  items-center justify-between py-6 px-10 bg-white shadow w-full">
             <Link href="/" className="flex items-center">
                 <span className="text-2xl font-bold text-black tracking-wide" style={{ fontFamily: 'Franklin Gothic Heavy' }}>
                     Home
