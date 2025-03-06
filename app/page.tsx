@@ -9,7 +9,7 @@ export default function Home() {
         <>
             <Navbar />
             <div
-                className="container max-w-screen-2xl m-auto p-3 bg-cover bg-center pt-24" // Added pt-24 for padding-top
+                className="container max-w-screen-2xl m-auto p-3 bg-cover bg-center pt-24"
                 style={{
                     backgroundImage: `url(${StadthalleImage.src})`,
                     height: '600px',
@@ -17,11 +17,11 @@ export default function Home() {
             >
                 <div className="flex flex-col md:flex-row justify-between items-center h-full">
                     <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-black text-white pl-8 md:pl-40">
-                        <span className="inline-block">SZ-</span>
-                        <span className="inline-block">LÄUFT</span>
+                        <span className="block">SZ-</span>
+                        <span className="block">LÄUFT</span>
                     </h1>
-                    <div className="relative mt-4 md:mt-0 md:pr-35">
-                        <div className="bg-white rounded-full p-5">
+                    <div className="relative mt-4 md:mt-0 md:pr-20">
+                        <div className="bg-white rounded-full p-3">
                             <Image
                                 src={Logo}
                                 alt="Logo"
