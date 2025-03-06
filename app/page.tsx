@@ -9,7 +9,7 @@ export default function Home() {
         <>
             <Navbar />
             <div
-                className="container max-w-screen-2xl m-auto p-3 bg-cover bg-center"
+                className="container max-w-screen-2xl m-auto p-3 bg-cover bg-center pt-24" // Added pt-24 for padding-top
                 style={{
                     backgroundImage: `url(${StadthalleImage.src})`,
                     height: '600px',
@@ -27,7 +27,7 @@ export default function Home() {
                                 alt="Logo"
                                 width={450}
                                 height={450}
-                                className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[450px] xl:h-[450px]"
+                                className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[400px] xl:h-[400px]"
                             />
                         </div>
                     </div>
