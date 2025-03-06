@@ -1,10 +1,17 @@
-'use client'
+'use client';
+
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 export default function Navbar() {
     const pathname = usePathname();
+    const [isOpen, setIsOpen] = useState(false); // State to manage burger menu open/close
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (
         <motion.nav
@@ -13,12 +20,22 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
         >
+            {/* Logo/Home Link */}
             <Link href="/" className="flex items-center">
                 <span className="text-2xl font-bold text-black tracking-wide" style={{ fontFamily: 'Franklin Gothic Heavy' }}>
                     Home
                 </span>
             </Link>
-            <div className="flex gap-8">
+
+            {/* Burger Icon (Mobile Only) */}
+            <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
+                <div className="w-6 h-0.5 bg-black mb-1"></div>
+                <div className="w-6 h-0.5 bg-black mb-1"></div>
+                <div className="w-6 h-0.5 bg-black"></div>
+            </div>
+
+            {/* Desktop Menu */}
+            <div className="hidden md:flex gap-8">
                 {["VORANMELDUNG", "STATISTIK", "GALERIE", "STARTZEIT", "TEAM"].map((item) => (
                     <Link
                         key={item}
@@ -26,15 +43,45 @@ export default function Navbar() {
                         className={`text-lg font-medium no-underline text-black hover:text-[#00aaca] relative group tracking-wide ${
                             pathname === `/${item.toLowerCase()}` ? 'text-[#00aaca]' : ''
                         }`}
-                        style={{ fontFamily: 'Franklin Gothic Medium'}}
-
+                        style={{ fontFamily: 'Franklin Gothic Medium' }}
                     >
-                            {item}
+                        {item}
                         <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-orange-500 rounded opacity-85 transition-all duration-300 group-hover:w-full"></span>
                     </Link>
-
                 ))}
             </div>
+
+            {/* Mobile Menu (Overlay) */}
+            {isOpen && (
+                <motion.div
+                    className="fixed top-0 left-0 w-full h-full bg-white z-50 flex flex-col items-center justify-center gap-6"
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                >
+                    {/* Close Icon */}
+                    <div className="absolute top-6 right-6 cursor-pointer" onClick={toggleMenu}>
+                        <div className="w-6 h-0.5 bg-black rotate-45"></div>
+                        <div className="w-6 h-0.5 bg-black -rotate-45 -translate-y-0.5"></div>
+                    </div>
+
+                    {/* Mobile Links */}
+                    {["VORANMELDUNG", "STATISTIK", "GALERIE", "STARTZEIT", "TEAM"].map((item) => (
+                        <Link
+                            key={item}
+                            href={`/${item.toLowerCase()}`}
+                            className={`text-2xl font-medium no-underline text-black hover:text-[#00aaca] relative group tracking-wide ${
+                                pathname === `/${item.toLowerCase()}` ? 'text-[#00aaca]' : ''
+                            }`}
+                            style={{ fontFamily: 'Franklin Gothic Medium' }}
+                            onClick={toggleMenu} // Close menu on link click
+                        >
+                            {item}
+                            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-orange-500 rounded opacity-85 transition-all duration-300 group-hover:w-full"></span>
+                        </Link>
+                    ))}
+                </motion.div>
+            )}
         </motion.nav>
     );
 }
