@@ -96,7 +96,7 @@ export default function Home() {
                     </div>
 
                 </motion.div>
-                <motion.div className="ml-4 mr-4 md:ml-32 md:mr-32 mt-5" variants={textVariants} initial="hidden" animate="visible" style={{backgroundColor: '#FAFAFA', padding: '20px 0'}}>
+                <motion.div className="ml-4 mr-4 md:ml-32 md:mr-32 mt-5" variants={textVariants} initial="hidden" animate="visible" style={{padding: '20px 0'}}>
                     <LogoSlider/>
                 </motion.div>
             </div>

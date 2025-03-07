@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Autoplay, Navigation, EffectCoverflow } from 'swiper/modules'; // Removed Pagination from imports
+import { Autoplay, Navigation, EffectCoverflow } from 'swiper/modules';
 import Image from 'next/image';
 import LogoHAKHASITHTL from "../pictures/LogoHAKHASITHTL_gradient.png";
 import Uniqua from "../pictures/Uniqa_Österreich_logo.png";
@@ -54,6 +54,7 @@ const LogoSlider = () => {
                                 style={{ objectFit: 'contain' }}
                                 priority={index < 5}
                                 loading="eager"
+                                className="swiper-slide-image"
                             />
                         </div>
                     </SwiperSlide>
