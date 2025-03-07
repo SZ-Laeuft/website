@@ -23,3 +23,12 @@ body {
 body {
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
+
+.swiper-slide-image {
+   filter: brightness(50%);
+ transition: filter 0.5s ease;
+ }
+
+   .swiper-slide-active .swiper-slide-image {
+     filter: brightness(100%);
+   }
