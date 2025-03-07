@@ -17,9 +17,10 @@ const LogoSlider = () => {
 
             <Swiper
                 effect={'coverflow'}
-                grabCursor={true}
+                grabCursor={false}
                 centeredSlides={true}
                 slidesPerView={3}
+                allowTouchMove={false}
                 breakpoints={{
                     640: { slidesPerView: 3 },
                     768: { slidesPerView: 5 },
@@ -41,7 +42,7 @@ const LogoSlider = () => {
                     modifier: 2.5,
                     slideShadows: false,
                 }}
-                className="mySwiper"
+                className="mySwiper scroller"
             >
                 {alternatingLogos.map((logo, index) => (
                     <SwiperSlide key={index}>

@@ -23,3 +23,9 @@ body {
 body {
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
+
+.scroller{
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
