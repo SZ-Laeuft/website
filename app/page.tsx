@@ -35,7 +35,7 @@ export default function Home() {
                         <motion.span className="block" variants={spanVariants(-1)} initial="hidden" animate="visible">
                             SZ-
                         </motion.span>
-                        <motion.span className="block" variants={spanVariants(1)} initial="hidden" animate="visible">
+                        <motion.span className="block" variants={spanVariants(-1)} initial="hidden" animate="visible">
                             LÄUFT
                         </motion.span>
                     </motion.h1>
