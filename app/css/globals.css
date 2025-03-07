@@ -12,3 +12,14 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@font-face {
+  font-family: 'Franklin Gothic Medium';
+  src: local('Franklin Gothic Medium');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
