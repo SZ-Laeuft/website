@@ -17,6 +17,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="de">
+        <head>
+            <meta name="darkreader-lock"/>
+        </head>
         <body className={inter.className}>
         <MantineProvider>
             {children}
