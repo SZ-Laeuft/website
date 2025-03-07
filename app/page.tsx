@@ -7,7 +7,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const textVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 0 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeInOut" } }
 };
 
