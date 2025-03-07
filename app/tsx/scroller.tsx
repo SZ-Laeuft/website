@@ -7,7 +7,7 @@ import Image from "next/image";
 import {useState, useEffect, JSX} from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-//sum dont work yet
+//TO BE CHANGED
 
 const images: ImageData[] = [
         {
