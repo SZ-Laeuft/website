@@ -7,7 +7,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const textVariants = {
-    hidden: { opacity: 0, y: 0 },
+    hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeInOut" } }
 };
 
@@ -56,6 +56,27 @@ export default function Home() {
                         </div>
                     </motion.div>
                 </div>
+            </div>
+            <div>
+                <motion.header
+                    className="text-4xl mt-10 pl-32"
+                    style={{ fontFamily: "Franklin Gothic Heavy" }}
+                    variants={textVariants}
+                    initial="hidden"
+                    animate="visible"
+                >
+                    Was ist SZ-Läuft?
+                </motion.header>
+
+                <motion.div
+                    className="flex flex-col md:flex-row justify-between px-32 mt-6 ml-32 text-lg leading-relaxed border-l-4 border-black pl-4 border-opacity-20"
+                    style={{ fontFamily: "Franklin Gothic Medium" }}
+                    variants={textVariants}
+                    initial="hidden"
+                    animate="visible"
+                >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </motion.div>
             </div>
         </>
     );
