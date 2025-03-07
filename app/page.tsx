@@ -25,7 +25,7 @@ export default function Home() {
                 className="relative p-3 bg-cover bg-center bg-fixed h-[600px] w-full flex items-center justify-center"
                 style={{ backgroundImage: `url(${StadthalleImage.src})` }}
             >
-                <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-7xl px-6 md:px-12 space-y-6 md:space-y-0 md:space-x-6">
+                <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-7xl px-6 md:px-12 space-y-6 md:space-y-0 md:space-x-6 pt-16">
                     <motion.h1
                         className="font-black text-white drop-shadow-md text-center md:text-left"
                         style={{ fontSize: "clamp(1rem, 8vw, 8rem)" }}
@@ -81,7 +81,8 @@ export default function Home() {
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
@@ -93,10 +94,12 @@ export default function Home() {
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
                     </div>
-                </motion.div>
-                <LogoSlider/>
-            </div>
 
-        </>
-    );
-}
+                </motion.div>
+                <motion.div className="ml-4 mr-4 md:ml-32 md:mr-32 mt-5" variants={textVariants} initial="hidden" animate="visible" style={{backgroundColor: '#FAFAFA', padding: '20px 0'}}>
+                    <LogoSlider/>
+                </motion.div>
+            </div>
+            </>
+            );
+            }

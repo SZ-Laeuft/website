@@ -14,7 +14,7 @@ const LogoSlider = () => {
     const alternatingLogos = logos.map((_, index) => (index % 2 === 0 ? LogoHAKHASITHTL : Uniqua));
 
     return (
-        <div className="ml-4 mr-4 md:ml-32 md:mr-32 mt-5" style={{ backgroundColor: '#FAFAFA', padding: '20px 0' }}>
+
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
@@ -45,7 +45,7 @@ const LogoSlider = () => {
             >
                 {alternatingLogos.map((logo, index) => (
                     <SwiperSlide key={index}>
-                        <div style={{ position: 'relative', width: '100%', height: '100px' }}>
+                        <div style={{ position: 'relative', width: '100%', height: '130px' }}>
                             <Image
                                 src={logo}
                                 alt={`Logo ${index + 1}`}
@@ -58,7 +58,6 @@ const LogoSlider = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-        </div>
     );
 };
 
