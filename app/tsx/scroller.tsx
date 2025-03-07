@@ -19,7 +19,7 @@ const LogoSlider = () => {
                 effect={'coverflow'}
                 grabCursor={true}
                 centeredSlides={true}
-                slidesPerView={3} // Default for mobile
+                slidesPerView={3}
                 breakpoints={{
                     640: { slidesPerView: 3 },
                     768: { slidesPerView: 5 },
@@ -33,7 +33,7 @@ const LogoSlider = () => {
                     disableOnInteraction: false,
                 }}
                 navigation={false}
-                modules={[Autoplay, Navigation, EffectCoverflow]} // Removed Pagination from modules
+                modules={[Autoplay, Navigation, EffectCoverflow]}
                 coverflowEffect={{
                     rotate: 0,
                     stretch: 0,
@@ -45,7 +45,7 @@ const LogoSlider = () => {
             >
                 {alternatingLogos.map((logo, index) => (
                     <SwiperSlide key={index}>
-                        <div style={{ position: 'relative', width: '100%', height: '100px' }}> {/* Adjusted height for mobile */}
+                        <div style={{ position: 'relative', width: '100%', height: '100px' }}>
                             <Image
                                 src={logo}
                                 alt={`Logo ${index + 1}`}
