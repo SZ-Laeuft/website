@@ -42,9 +42,7 @@ export default function Home() {
 
                     <motion.div
                         className="relative"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.7, ease: "easeInOut", delay: 0.5 }}
+                        variants={spanVariants(1)} initial="hidden" animate="visible"
                     >
                         <div className="rounded-full p-3">
                             <Image
