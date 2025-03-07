@@ -10,7 +10,7 @@ import LogoHAKHASITHTL from "../pictures/LogoHAKHASITHTL_gradient.png";
 import Uniqua from "../pictures/Uniqa_Österreich_logo.png";
 
 const LogoSlider = () => {
-    const logos = Array(8).fill(LogoHAKHASITHTL);
+    const logos = Array(10).fill(LogoHAKHASITHTL);
     const alternatingLogos = logos.map((_, index) => (index % 2 === 0 ? LogoHAKHASITHTL : Uniqua));
 
     return (

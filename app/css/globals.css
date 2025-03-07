@@ -31,10 +31,10 @@ body {
 }
 
 .swiper-slide-image {
-   filter: brightness(50%);
- transition: filter 0.5s ease;
- }
+  filter: brightness(80%) blur(1px) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+transition: filter 0.5s ease;
+}
 
-   .swiper-slide-active .swiper-slide-image {
-     filter: brightness(100%);
-   }
+.swiper-slide-active .swiper-slide-image {
+  filter: brightness(100%);
+}
