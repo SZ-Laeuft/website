@@ -63,9 +63,9 @@ export default function Home() {
             </div>
 
             {/* Main Content */}
-            <div className="md:pl-32 md:pr-32">
+            <div className="md:pl-48 md:pr-48">
                 {/* Introduction Section */}
-                <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left"
+                <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left pb-3"
                                style={{fontFamily: "Franklin Gothic Heavy"}} variants={textVariants} initial="hidden"
                                animate="visible">
                     Was ist SZ-Läuft?
@@ -94,7 +94,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* Donation Section */}
-                <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left"
+                <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left pb-3"
                                style={{fontFamily: "Franklin Gothic Heavy"}} variants={textVariants} initial="hidden"
                                animate="visible">
                     Spendenempfänger
@@ -125,7 +125,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* Schedule  Section */}
-                <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left"
+                <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left pb-3"
                                style={{fontFamily: "Franklin Gothic Heavy"}} variants={textVariants} initial="hidden"
                                animate="visible">
                     Ablauf
@@ -157,7 +157,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* Reward System Section */}
-                <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left"
+                <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left pb-3"
                                style={{fontFamily: "Franklin Gothic Heavy"}} variants={textVariants} initial="hidden"
                                animate="visible">
                     Belohnungssystem
@@ -249,29 +249,45 @@ export default function Home() {
                     <div className="mt-4">
                         {/* Team Section */}
                         {activeTab === "Team" && (
-                            <motion.div variants={textVariants} initial="hidden" animate="visible">
-                                <h2 className="text-2xl font-bold mt-4">Team</h2>
-                                <p className="0 p-4 rounded-md mt-2">
-                                    Das Team besteht aus 21 Schülern der diesjährigen 3CHIT und 3AHIT. Das Event wird
-                                    von
-                                    Sebastian Zöchbauer beaufsichtigt und Fabian Jungwirth und Maximilian Dorninger
-                                    als Projektleiter organisiert. Die Schüler wurden in vier Subteams aufgeteilt, jedes
-                                    mit einem eigenen Teamleiter.
-                                </p>
-                            </motion.div>
+                            <div>
+                                <motion.div initial="hidden" animate="visible" variants={textVariants}>
+                                    <h2 className="text-2xl font-bold mt-4">Team</h2>
+                                </motion.div>
+                                <motion.div
+                                    className="md:border-l-4 border-black md:pl-4 border-opacity-20"
+                                    initial="hidden"
+                                    animate="visible"
+                                    variants={textVariants}
+                                >
+                                    <p className="md:p-4 rounded-md mt-2">
+                                        Das Team besteht aus 21 Schülern der diesjährigen 3CHIT und 3AHIT. Das Event wird
+                                        von Sebastian Zöchbauer beaufsichtigt und Fabian Jungwirth und Maximilian Dorninger
+                                        als Projektleiter organisiert. Die Schüler wurden in vier Subteams aufgeteilt, jedes
+                                        mit einem eigenen Teamleiter.
+                                    </p>
+                                </motion.div>
+                            </div>
                         )}
 
                         {/* Strecke Section */}
                         {activeTab === "Strecke" && (
-                            <motion.div variants={textVariants} initial="hidden" animate="visible">
-                                <h2 className="text-2xl font-bold mt-4">Strecke</h2>
-                                <p className="p-4 rounded-md mt-2">
-                                    Die Laufstrecke führt rund um die Stadthalle. Nach jeder Runde muss der Scanner am
-                                    Startbereich mit dem NFC-Armband passiert werden, um die gelaufenen Runden zu
-                                    erfassen.
-                                    Neben dem Lauf gibt es auch ein Alternativprogramm in der Stadthalle.
-                                </p>
-                            </motion.div>
+                            <div>
+                                <motion.div initial="hidden" animate="visible" variants={textVariants}>
+                                    <h2 className="text-2xl font-bold mt-4">Strecke</h2>
+                                </motion.div>
+                                <motion.div
+                                    className="md:border-l-4 border-black md:pl-4 border-opacity-20"
+                                    initial="hidden"
+                                    animate="visible"
+                                    variants={textVariants}
+                                >
+                                    <p className="md:p-4 rounded-md mt-2">
+                                        Die Laufstrecke führt rund um die Stadthalle. Nach jeder Runde muss der Scanner am
+                                        Startbereich mit dem NFC-Armband passiert werden, um die gelaufenen Runden zu erfassen.
+                                        Neben dem Lauf gibt es auch ein Alternativprogramm in der Stadthalle.
+                                    </p>
+                                </motion.div>
+                            </div>
                         )}
                     </div>
                 </div>
