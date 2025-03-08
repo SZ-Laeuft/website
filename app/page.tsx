@@ -63,7 +63,7 @@ export default function Home() {
             </div>
 
             {/* Main Content */}
-            <div>
+            <div className="md:pl-32 md:pr-32">
                 {/* Introduction Section */}
                 <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left"
                                style={{fontFamily: "Franklin Gothic Heavy"}} variants={textVariants} initial="hidden"
@@ -169,7 +169,7 @@ export default function Home() {
                         <p>
                             Auch heuer beim diesjährigen Laufevent, wird es das <strong>Belohnungssystem</strong> geben! Erhalte für
                             deine gelaufenen Runden fantastische Preise, die mit jedem Meilenstein besser werden und
-                            hol’ dir anschließend deine wohlverdienten Belohnungen direkt beim Team ab!
+                            hole dir anschließend deine wohlverdienten Belohnungen direkt beim Team ab!
                         </p>
                     </div>
 
@@ -275,11 +275,9 @@ export default function Home() {
                         )}
                     </div>
                 </div>
-
-
-                {/* Footer */}
-                <Footer/>
             </div>
+            {/* Footer */}
+            <Footer/>
         </>
     );
 }
