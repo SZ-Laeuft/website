@@ -260,7 +260,7 @@ export default function Home() {
                                     variants={textVariants}
                                 >
                                     <p className="md:p-4 rounded-md mt-2">
-                                        Das Team besteht aus 21 Schülern der diesjährigen 3CHIT und 3AHIT. Das Event wird
+                                        Das Team besteht aus 21 Schülern der diesjährigen 3CHIT und 3BHIT. Das Event wird
                                         von Sebastian Zöchbauer beaufsichtigt und Fabian Jungwirth und Maximilian Dorninger
                                         als Projektleiter organisiert. Die Schüler wurden in vier Subteams aufgeteilt, jedes
                                         mit einem eigenen Teamleiter.

@@ -32,7 +32,10 @@ export default function Team() {
                     animate="visible"
                 >
                     <div className="max-w-full break-words text-base md:text-lg">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                        Das Hauptteam SZ-Läuft besteht aus vier Untergruppen, die jeweils einen Teilbereich übernehmen.
+                        Team Software übernimmt alle Softwareaufgaben (APIs, programmieren der NFC-Bänder, Website, ...), Team Running ist zuständig für die Route, Team Promotion übernimmt den Marketing-Sektor, und die Teamleitung ist das allgemeine Organisatorische Organ des des ganzen Projekts.
+                        Die jeweiligen Teamleader sind innerhalb der Gruppe nochmal für Ordnung und klare Kommunikation zwischen den Gruppen zuständig.
+                        Das Projekt stellt sich zusammen aus mehreren engagierten Schülern verteilt über den dritten Jahrgang der IT-HTL.
                     </div>
                 </motion.div>
             </div>

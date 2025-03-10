@@ -9,7 +9,7 @@ const textVariants = {
     visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeInOut" } }
 };
 
-export default function Galarie() {
+export default function Galerie() {
     return (
         <div className="flex flex-col min-h-screen">
             <Navbar />
@@ -21,7 +21,7 @@ export default function Galarie() {
                     initial="hidden"
                     animate="visible"
                 >
-                    Galarie
+                    Galerie
                 </motion.header>
 
                 <motion.div
