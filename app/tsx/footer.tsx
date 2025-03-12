@@ -18,7 +18,7 @@ export default function Footer() {
                         className="drop-shadow-md"
                         priority
                     />
-                    <h2 className="text-xl font-bold mt-3 tracking-wide transition" style={{ fontFamily: 'Bebas Neue' }}>
+                    <h2 className="text-xl font-bold mt-3 tracking-wide transition" style={{ fontFamily: 'Franklin Gothic Heavy' }}>
                         SZ-LÄUFT
                     </h2>
                     <p className="text-sm text-gray-400 mt-2 text-center md:text-left">Ein Laufevent für den Guten Zweck.</p>
