@@ -20,8 +20,28 @@ const spanVariants = (direction: number) => ({
     visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeInOut", delay: 0.2 } }
 });
 
+const SectionHeader = ({ children }: { children: React.ReactNode }) => (
+    <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left pb-3"
+                   style={{ fontFamily: "Franklin Gothic Heavy" }} variants={textVariants} initial="hidden"
+                   animate="visible">
+        {children}
+    </motion.header>
+);
+
+const SectionContent = ({ children }: { children: React.ReactNode }) => (
+    <motion.div
+        className="flex flex-col md:flex-row justify-between px-6 md:ml-32 text-lg leading-relaxed md:border-l-4 border-black pl-4 border-opacity-20 md:pr-32"
+        style={{ fontFamily: "Franklin Gothic Medium" }} variants={textVariants} initial="hidden"
+        animate="visible">
+        <div className="max-w-full break-words text-base md:text-lg">
+            {children}
+        </div>
+    </motion.div>
+);
+
 export default function Home() {
     const [activeTab, setActiveTab] = useState("Team");
+
     return (
         <>
             <Navbar />
@@ -65,104 +85,65 @@ export default function Home() {
             {/* Main Content */}
             <div className="md:pl-48 md:pr-48">
                 {/* Introduction Section */}
-                <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left pb-3"
-                               style={{fontFamily: "Franklin Gothic Heavy"}} variants={textVariants} initial="hidden"
-                               animate="visible">
-                    Was ist SZ-Läuft?
-                </motion.header>
-
-                <motion.div
-                    className="flex flex-col md:flex-row justify-between px-6  md:ml-32 text-lg leading-relaxed md:border-l-4 border-black pl-4 border-opacity-20 md:pr-32"
-                    style={{fontFamily: "Franklin Gothic Medium"}} variants={textVariants} initial="hidden"
-                    animate="visible">
-                    <div className="max-w-full break-words text-base md:text-lg">
-                        <p>
-                            Das SZ-Läuft ist ein Laufevent, das am 25. Juni 2025 stattfindet und dazu dient, Spenden für
-                            xxxxxxx zu sammeln.
-                        </p>
-                        <br/>
-                        <p>
-                            Dabei können die Schülerinnen und Schüler nicht nur das im Schulfach Informationstechnische
-                            Projekte Gelernte anwenden,
-                            sondern auch praktische Erfahrungen im Bereich Projektmanagement sammeln. Darüber hinaus
-                            werden zahlreiche Soft- und Hardskills
-                            wie Kommunikationsfähigkeit, Teamarbeit und technisches Know-how gefördert. Diese
-                            Fähigkeiten sind in der heutigen Berufswelt nicht
-                            mehr wegzudenken und bereiten die Schüler optimal auf ihre Zukunft vor.
-                        </p>
-                    </div>
-                </motion.div>
+                <SectionHeader>Was ist SZ-Läuft?</SectionHeader>
+                <SectionContent>
+                    <p>
+                        Das SZ-Läuft ist ein Laufevent, das am 25. Juni 2025 stattfindet und dazu dient, Spenden für
+                        xxxxxxx zu sammeln.
+                    </p>
+                    <br />
+                    <p>
+                        Dabei können die Schülerinnen und Schüler nicht nur das im Schulfach Informationstechnische
+                        Projekte Gelernte anwenden,
+                        sondern auch praktische Erfahrungen im Bereich Projektmanagement sammeln. Darüber hinaus
+                        werden zahlreiche Soft- und Hardskills
+                        wie Kommunikationsfähigkeit, Teamarbeit und technisches Know-how gefördert. Diese
+                        Fähigkeiten sind in der heutigen Berufswelt nicht
+                        mehr wegzudenken und bereiten die Schüler optimal auf ihre Zukunft vor.
+                    </p>
+                </SectionContent>
 
                 {/* Donation Section */}
-                <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left pb-3"
-                               style={{fontFamily: "Franklin Gothic Heavy"}} variants={textVariants} initial="hidden"
-                               animate="visible">
-                    Spendenempfänger
-                </motion.header>
-
-                <motion.div
-                    className="flex flex-col md:flex-row justify-between px-6  md:ml-32 text-lg leading-relaxed md:border-l-4 border-black pl-4 border-opacity-20 md:pr-32"
-                    style={{fontFamily: "Franklin Gothic Medium"}} variants={textVariants} initial="hidden"
-                    animate="visible">
-                    <div className="max-w-full break-words text-base md:text-lg">
-                        <p>
-                            Der diesjährige Spendenempfänger ist xxxxx. xxxxx ist eine engagierte gemeinnützige
-                            Organisation,
-                            die sich leidenschaftlich für xxxxx einsetzt.
-                        </p>
-                    </div>
-                </motion.div>
+                <SectionHeader>Spendenempfänger</SectionHeader>
+                <SectionContent>
+                    <p>
+                        Der diesjährige Spendenempfänger ist xxxxx. xxxxx ist eine engagierte gemeinnützige
+                        Organisation,
+                        die sich leidenschaftlich für xxxxx einsetzt.
+                    </p>
+                </SectionContent>
 
                 {/* Sponsors Section */}
-                <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left"
-                               style={{fontFamily: "Franklin Gothic Heavy"}} variants={textVariants} initial="hidden"
-                               animate="visible">
-                    Sponsoren
-                </motion.header>
+                <SectionHeader>Sponsoren</SectionHeader>
                 <motion.div className="ml-4 mr-4 md:ml-32 md:mr-32 mt-5" variants={textVariants} initial="hidden"
-                            animate="visible" style={{padding: '20px 0'}}>
-                    <LogoSlider/>
+                            animate="visible" style={{ padding: '20px 0' }}>
+                    <LogoSlider />
                 </motion.div>
 
-                {/* Schedule  Section */}
-                <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left pb-3"
-                               style={{fontFamily: "Franklin Gothic Heavy"}} variants={textVariants} initial="hidden"
-                               animate="visible">
-                    Ablauf
-                </motion.header>
-
-                <motion.div
-                    className="flex flex-col md:flex-row justify-between px-6  md:ml-32 text-lg leading-relaxed md:border-l-4 border-black pl-4 border-opacity-20 md:pr-32"
-                    style={{fontFamily: "Franklin Gothic Medium"}} variants={textVariants} initial="hidden"
-                    animate="visible">
-                    <div className="max-w-full break-words text-base md:text-lg">
-                        <p>
-                            Die Anmeldung für die Frühstarter beginnt um xxxxx, sodass alle angemeldeten Personen um
-                            xxxxx
-                            loslaufen können. In den Startzeiten ist ersichtlich, welche Teilnehmer wann zur Anmeldung
-                            kommen und wann sie starten.
-                            Nach jeder Runde muss der Scanner am Startbereich mit dem erhaltenen NFC-Armband passiert
-                            werden, um die gelaufenen Runden zu erfassen.
-                            Bei Durst kann man sich während des Laufens an den Wasserstationen einen Becher Wasser
-                            nehmen. Essen gibt es beim Catering, dessen Erlös
-                            ebenfalls gespendet wird. Neben dem Lauf wird auch ein Alternativprogramm in der Stadthalle
-                            angeboten.
-                        </p>
-                        <br/>
-                        <p>
-                            Frühstarter müssen mindestens 20 Runden laufen, normale Läufer müssen mindestens 10 Runden
-                            zurücklegen!
-                        </p>
-                    </div>
-                </motion.div>
+                {/* Schedule Section */}
+                <SectionHeader>Ablauf</SectionHeader>
+                <SectionContent>
+                    <p>
+                        Die Anmeldung für die Frühstarter beginnt um xxxxx, sodass alle angemeldeten Personen um
+                        xxxxx
+                        loslaufen können. In den Startzeiten ist ersichtlich, welche Teilnehmer wann zur Anmeldung
+                        kommen und wann sie starten.
+                        Nach jeder Runde muss der Scanner am Startbereich mit dem erhaltenen NFC-Armband passiert
+                        werden, um die gelaufenen Runden zu erfassen.
+                        Bei Durst kann man sich während des Laufens an den Wasserstationen einen Becher Wasser
+                        nehmen. Essen gibt es beim Catering, dessen Erlös
+                        ebenfalls gespendet wird. Neben dem Lauf wird auch ein Alternativprogramm in der Stadthalle
+                        angeboten.
+                    </p>
+                    <br />
+                    <p>
+                        Frühstarter müssen mindestens 20 Runden laufen, normale Läufer müssen mindestens 10 Runden
+                        zurücklegen!
+                    </p>
+                </SectionContent>
 
                 {/* Reward System Section */}
-                <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left pb-3"
-                               style={{fontFamily: "Franklin Gothic Heavy"}} variants={textVariants} initial="hidden"
-                               animate="visible">
-                    Belohnungssystem
-                </motion.header>
-
+                <SectionHeader>Belohnungssystem</SectionHeader>
                 <motion.div className="md:ml-32 text-lg leading-relaxed md:pr-32" variants={textVariants}
                             initial="hidden" animate="visible">
                     <div className="md:border-l-4 border-black pl-4 border-opacity-20">
@@ -177,41 +158,19 @@ export default function Home() {
                     <div className="relative mt-6">
                         {/* Circles and Rewards */}
                         <div className="flex justify-between items-center relative z-10 pt-6">
-                            {/* 15 Runden */}
-                            <div className="text-center">
-                                <div
-                                    className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto">
-                                    <span className="text-4xl">🏃‍♂️</span>
+                            {[
+                                { rounds: 15, emoji: "🏃‍♂️", reward: "Traubenzucker" },
+                                { rounds: 25, emoji: "🥤", reward: "Getränk (Mind)" },
+                                { rounds: 30, emoji: "🍎", reward: "Obst nach Wahl" },
+                                { rounds: 40, emoji: "🍽️", reward: "Essen nach Wahl" }
+                            ].map(({ rounds, emoji, reward }) => (
+                                <div key={rounds} className="text-center">
+                                    <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto">
+                                        <span className="text-4xl">{emoji}</span>
+                                    </div>
+                                    <p className="mt-2"><strong>{rounds} Runden:</strong> {reward}</p>
                                 </div>
-                                <p className="mt-2"><strong>15 Runden:</strong> Traubenzucker</p>
-                            </div>
-
-                            {/* 25 Runden */}
-                            <div className="text-center">
-                                <div
-                                    className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto">
-                                    <span className="text-4xl">🥤</span>
-                                </div>
-                                <p className="mt-2"><strong>25 Runden:</strong> Getränk (Mind)</p>
-                            </div>
-
-                            {/* 30 Runden */}
-                            <div className="text-center">
-                                <div
-                                    className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto">
-                                    <span className="text-4xl">🍎</span>
-                                </div>
-                                <p className="mt-2"><strong>30 Runden:</strong> Obst nach Wahl</p>
-                            </div>
-
-                            {/* 40 Runden */}
-                            <div className="text-center">
-                                <div
-                                    className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto">
-                                    <span className="text-4xl">🍽️</span>
-                                </div>
-                                <p className="mt-2"><strong>40 Runden:</strong> Essen nach Wahl</p>
-                            </div>
+                            ))}
                         </div>
                     </div>
 
@@ -219,8 +178,6 @@ export default function Home() {
                         Nimmst du die Herausforderung an?
                     </p>
                 </motion.div>
-
-
 
                 {/* Organisation Section */}
                 <div className="mt-10 md:pl-32 px-6">
@@ -293,7 +250,7 @@ export default function Home() {
                 </div>
             </div>
             {/* Footer */}
-            <Footer/>
+            <Footer />
         </>
     );
 }
