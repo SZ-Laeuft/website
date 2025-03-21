@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 import LogoSlider from "@/app/tsx/scroller";
 import Footer from "./tsx/footer";
 import { useState } from "react";
+import Group from "./pictures/all.jpg"
+import Ö3 from "./pictures/ö3_logo.png"
 
 // Animation Variants
 const textVariants = {
@@ -51,8 +53,8 @@ export default function Home() {
                 <Image
                     src={StadthalleImage}
                     alt="Background"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: "cover" }}
                     quality={100}
                 />
                 <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-7xl px-6 md:px-12 space-y-6 md:space-y-0 md:space-x-6 pt-16">
@@ -95,7 +97,7 @@ export default function Home() {
                         Das SZ-Läuft ist ein Laufevent, das am 25. Juni 2025 stattfindet und dazu dient, Spenden für
                         xxxxxxx zu sammeln.
                     </p>
-                    <br />
+                    <br/>
                     <p>
                         Dabei können die Schülerinnen und Schüler nicht nur das im Schulfach Informationstechnische
                         Projekte Gelernte anwenden,
@@ -111,17 +113,27 @@ export default function Home() {
                 <SectionHeader>Spendenempfänger</SectionHeader>
                 <SectionContent>
                     <p>
-                        Der diesjährige Spendenempfänger ist xxxxx. xxxxx ist eine engagierte gemeinnützige
-                        Organisation,
-                        die sich leidenschaftlich für xxxxx einsetzt.
+                        Der diesjährige Spendenempfänger unserer Aktion ist das Ö3-Weihnachtswunder.
+                        Diese großartige Initiative unterstützt Menschen in Not und sorgt dafür, dass auch sie an
+                        Weihnachten Hoffnung und Freude erleben können
                     </p>
                 </SectionContent>
+                <motion.div
+                    className="mt-5 flex justify-center"
+                    variants={textVariants}
+                    initial="hidden"
+                    animate="visible"
+                    style={{padding: '20px 0'}}
+                >
+                    <Image src={Ö3} alt="Ö3-logo" className="mx-auto"/>
+                </motion.div>
+
 
                 {/* Sponsors Section */}
                 <SectionHeader>Sponsoren</SectionHeader>
                 <motion.div className="ml-4 mr-4 md:ml-32 md:mr-32 mt-5" variants={textVariants} initial="hidden"
-                            animate="visible" style={{ padding: '20px 0' }}>
-                    <LogoSlider />
+                            animate="visible" style={{padding: '20px 0'}}>
+                    <LogoSlider/>
                 </motion.div>
 
                 {/* Schedule Section */}
@@ -139,7 +151,7 @@ export default function Home() {
                         ebenfalls gespendet wird. Neben dem Lauf wird auch ein Alternativprogramm in der Stadthalle
                         angeboten.
                     </p>
-                    <br />
+                    <br/>
                     <p>
                         Frühstarter müssen mindestens 20 Runden laufen, normale Läufer müssen mindestens 10 Runden
                         zurücklegen!
@@ -152,7 +164,8 @@ export default function Home() {
                             initial="hidden" animate="visible">
                     <div className="md:border-l-4 border-black pl-4 border-opacity-20">
                         <p>
-                            Auch heuer beim diesjährigen Laufevent, wird es das <strong>Belohnungssystem</strong> geben! Erhalte für
+                            Auch heuer beim diesjährigen Laufevent, wird es das <strong>Belohnungssystem</strong> geben!
+                            Erhalte für
                             deine gelaufenen Runden fantastische Preise, die mit jedem Meilenstein besser werden und
                             hole dir anschließend deine wohlverdienten Belohnungen direkt beim Team ab!
                         </p>
@@ -161,13 +174,14 @@ export default function Home() {
                         <div className="relative mt-6">
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                                 {[
-                                    { rounds: 15, emoji: "🏃‍♂️", reward: "Traubenzucker" },
-                                    { rounds: 25, emoji: "🥤", reward: "Getränk (Mind)" },
-                                    { rounds: 30, emoji: "🍎", reward: "Obst nach Wahl" },
-                                    { rounds: 40, emoji: "🍽️", reward: "Essen nach Wahl" }
-                                ].map(({ rounds, emoji, reward }) => (
+                                    {rounds: 15, emoji: "🏃‍♂️", reward: "Traubenzucker"},
+                                    {rounds: 25, emoji: "🥤", reward: "Getränk (Mind)"},
+                                    {rounds: 30, emoji: "🍎", reward: "Obst nach Wahl"},
+                                    {rounds: 40, emoji: "🍽️", reward: "Essen nach Wahl"}
+                                ].map(({rounds, emoji, reward}) => (
                                     <div key={rounds} className="flex flex-col items-center">
-                                        <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
+                                        <div
+                                            className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
                                             <span className="text-4xl">{emoji}</span>
                                         </div>
                                         <p className="mt-2 text-sm"><strong>{rounds} Runden:</strong> {reward}</p>
@@ -214,17 +228,29 @@ export default function Home() {
                                     <h2 className="text-2xl font-bold mt-4">Team</h2>
                                 </motion.div>
                                 <motion.div
-                                    className="md:border-l-4 border-black md:pl-4 border-opacity-20"
                                     initial="hidden"
                                     animate="visible"
                                     variants={textVariants}
                                 >
-                                    <p className="md:p-4 rounded-md mt-2">
-                                        Das Team besteht aus 21 Schülern der diesjährigen 3CHIT und 3BHIT. Das Event wird
-                                        von Sebastian Zöchbauer beaufsichtigt und Fabian Jungwirth und Maximilian Dorninger
-                                        als Projektleiter organisiert. Die Schüler wurden in vier Subteams aufgeteilt, jedes
-                                        mit einem eigenen Teamleiter.
-                                    </p>
+                                    {/* Text with left border */}
+                                    <div className="md:border-l-4 border-black md:pl-4 border-opacity-20">
+                                        <p className="md:p-4 rounded-md mt-2">
+                                            Das Team besteht aus 21 Schülern der diesjährigen 3CHIT und 3BHIT. Das Event
+                                            wird
+                                            von Sebastian Zöchbauer beaufsichtigt und Fabian Jungwirth und Maximilian
+                                            Dorninger
+                                            als Projektleiter organisiert. Die Schüler wurden in vier Subteams
+                                            aufgeteilt, jedes
+                                            mit einem eigenen Teamleiter.
+                                        </p>
+                                    </div>
+
+                                    {/* Image without border */}
+                                    <Image
+                                        src={Group}
+                                        alt="Background"
+                                        className="mt-4"
+                                    />
                                 </motion.div>
                             </div>
                         )}
@@ -242,8 +268,10 @@ export default function Home() {
                                     variants={textVariants}
                                 >
                                     <p className="md:p-4 rounded-md mt-2">
-                                        Die Laufstrecke führt rund um die Stadthalle. Nach jeder Runde muss der Scanner am
-                                        Startbereich mit dem NFC-Armband passiert werden, um die gelaufenen Runden zu erfassen.
+                                        Die Laufstrecke führt rund um die Stadthalle. Nach jeder Runde muss der Scanner
+                                        am
+                                        Startbereich mit dem NFC-Armband passiert werden, um die gelaufenen Runden zu
+                                        erfassen.
                                         Neben dem Lauf gibt es auch ein Alternativprogramm in der Stadthalle.
                                     </p>
                                 </motion.div>
@@ -253,7 +281,7 @@ export default function Home() {
                 </div>
             </div>
             {/* Footer */}
-            <Footer />
+            <Footer/>
         </>
     );
 }

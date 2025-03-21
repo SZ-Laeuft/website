@@ -37,7 +37,7 @@ export default function Voranmeldung() {
                 </motion.div>
                 <div className="w-full flex justify-center p-4 pt-16">
                     <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLScaLBTUKP-RETNzHh5I68nwoW30Soc1tGPYsMs16LiwffdHhA/viewform?usp=header"
+                        src="https://forms.gle/HnNSABuuzcukQojr6 "
                         className="w-full md:w-3/4 lg:w-1/2 h-screen border rounded-lg"
                     >
                     </iframe>
