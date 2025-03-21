@@ -47,10 +47,14 @@ export default function Home() {
             <Navbar />
 
             {/* Hero Section */}
-            <div
-                className="relative p-3 bg-cover bg-center bg-fixed h-[600px] w-full flex items-center justify-center"
-                style={{ backgroundImage: `url(${StadthalleImage.src})` }}
-            >
+            <div className="relative h-[600px] w-full flex items-center justify-center">
+                <Image
+                    src={StadthalleImage}
+                    alt="Background"
+                    layout="fill"
+                    objectFit="cover"
+                    quality={100}
+                />
                 <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-7xl px-6 md:px-12 space-y-6 md:space-y-0 md:space-x-6 pt-16">
                     <motion.h1
                         className="font-black text-white drop-shadow-md text-center md:text-left"
@@ -153,24 +157,23 @@ export default function Home() {
                             hole dir anschließend deine wohlverdienten Belohnungen direkt beim Team ab!
                         </p>
                     </div>
-
-                    {/* Rewards section without border */}
                     <div className="relative mt-6">
-                        {/* Circles and Rewards */}
-                        <div className="flex justify-between items-center relative z-10 pt-6">
-                            {[
-                                { rounds: 15, emoji: "🏃‍♂️", reward: "Traubenzucker" },
-                                { rounds: 25, emoji: "🥤", reward: "Getränk (Mind)" },
-                                { rounds: 30, emoji: "🍎", reward: "Obst nach Wahl" },
-                                { rounds: 40, emoji: "🍽️", reward: "Essen nach Wahl" }
-                            ].map(({ rounds, emoji, reward }) => (
-                                <div key={rounds} className="text-center">
-                                    <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto">
-                                        <span className="text-4xl">{emoji}</span>
+                        <div className="relative mt-6">
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                                {[
+                                    { rounds: 15, emoji: "🏃‍♂️", reward: "Traubenzucker" },
+                                    { rounds: 25, emoji: "🥤", reward: "Getränk (Mind)" },
+                                    { rounds: 30, emoji: "🍎", reward: "Obst nach Wahl" },
+                                    { rounds: 40, emoji: "🍽️", reward: "Essen nach Wahl" }
+                                ].map(({ rounds, emoji, reward }) => (
+                                    <div key={rounds} className="flex flex-col items-center">
+                                        <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
+                                            <span className="text-4xl">{emoji}</span>
+                                        </div>
+                                        <p className="mt-2 text-sm"><strong>{rounds} Runden:</strong> {reward}</p>
                                     </div>
-                                    <p className="mt-2"><strong>{rounds} Runden:</strong> {reward}</p>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
                     </div>
 
