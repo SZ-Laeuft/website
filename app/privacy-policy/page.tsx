@@ -38,10 +38,10 @@ export default function Datenschutz() {
                         <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
 
                         <p>
-                            [Name des Veranstalters]<br/>
-                            [Adresse]<br/>
-                            [E-Mail-Adresse]<br/>
-                            [Telefonnummer]
+                            Sebastian Zöchbauer<br/>
+                            Addr.: Bach 7, 3242 Texingtal<br/>
+                            E-Mail: sebastian.zoechbauer@sz-ybbs.ac.at<br/>
+                            Tel.: +43 677 63772559
                         </p>
                         <br/>
 
@@ -62,74 +62,96 @@ export default function Datenschutz() {
                             <br/>
                             Diese Daten werden ausschließlich zur Gewährleistung eines reibungslosen Verbindungsaufbaus, zur Systemsicherheit sowie zu administrativen Zwecken verarbeitet.
                         </p>
+                        <br/>
 
-                        b) Bei Registrierung oder Anmeldung zum Spendenlauf
-                        Wenn Sie sich für unseren Spendenlauf anmelden, erheben wir folgende personenbezogene Daten:
+                        <p>
+                            b) Bei Registrierung oder Anmeldung zum Spendenlauf<br/>
+                            Wenn Sie sich für unseren Spendenlauf anmelden, erheben wir folgende personenbezogene Daten:
+                            <br/>
+                            Vorname und Nachname
+                            <br/>
+                            Schule/Firma
+                            <br/>
+                            Klasse (falls Schüler des SZ-Ybbs)
+                            <br/>
+                            Angaben zur Teilnahme (z.B. Teamzugehörigkeit, Startzeit)
+                            <br/>
+                            Die Verarbeitung dieser Daten erfolgt zur Durchführung des Spendenlaufs sowie zur Abwicklung von Spenden und ggf. steuerlichen Nachweiszwecken.
 
-                        Vorname und Nachname
+                        </p>
+                        <br/>
 
-                        Adresse
 
-                        E-Mail-Adresse
+                        <h2 className="font-bold">4. Zwecke der Datenverarbeitung</h2>
+                        <p>
+                            Wir verarbeiten Ihre Daten zu folgenden Zwecken:
+                            <br/>
+                            Organisation und Durchführung des Spendenlaufs
+                            <br/>
+                            Kommunikation mit Ihnen (z.B. Bestätigung der Anmeldung, wichtige Informationen zum Event)
+                            <br/>
+                            Abwicklung von Spenden und Ausstellung von Spendenbescheinigungen
+                            <br/>
+                            Einhaltung gesetzlicher Aufbewahrungspflichten
+                        </p>
+                        <br/>
 
-                        Telefonnummer (optional)
+                        <h2 className="font-bold">5. Rechtsgrundlagen der Verarbeitung</h2>
+                        <p>
+                            Die Verarbeitung Ihrer personenbezogenen Daten erfolgt auf Basis folgender Rechtsgrundlagen:
+                            <br/>
+                            Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung und vorvertragliche Maßnahmen)
+                            <br/>
+                            Art. 6 Abs. 1 lit. c DSGVO (Erfüllung rechtlicher Verpflichtungen, z.B. steuerrechtlicher Vorschriften)
+                            <br/>
+                            Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, z.B. für die Veröffentlichung von Fotos oder Namen auf der Website)
+                        </p>
+                        <br/>
 
-                        Angaben zur Teilnahme (z.B. Teamzugehörigkeit, Startzeit)
+                        <h2 className="font-bold">6. Weitergabe von Daten</h2>
+                        <p>
+                            Eine Weitergabe Ihrer personenbezogenen Daten an Dritte erfolgt nur, soweit dies für die Durchführung des Spendenlaufs notwendig ist oder wir gesetzlich dazu verpflichtet sind. Mögliche Empfänger können z.B. Zahlungsdienstleister oder Steuerbehörden sein.
+                        </p>
+                        <br/>
 
-                        Angaben zur Spende (z.B. Betrag, Zahlungsdaten)
+                        <h2 className="font-bold">7. Dauer der Datenspeicherung</h2>
+                        <p>
+                            Ihre personenbezogenen Daten werden nur so lange gespeichert, wie es für die oben genannten Zwecke erforderlich ist. Danach werden die Daten gelöscht, es sei denn, gesetzliche Aufbewahrungspflichten (z.B. nach Steuerrecht) verlangen eine längere Speicherung.
+                        </p>
+                        <br/>
 
-                        Die Verarbeitung dieser Daten erfolgt zur Durchführung des Spendenlaufs sowie zur Abwicklung von Spenden und ggf. steuerlichen Nachweiszwecken.
+                        <h2 className="font-bold">8. Ihre Rechte</h2>
+                        <p>
+                            Sie haben jederzeit das Recht:
+                            <br/>
+                            gemäß Art. 15 DSGVO Auskunft über Ihre gespeicherten Daten zu verlangen,
+                            <br/>
+                            gemäß Art. 16 DSGVO die Berichtigung unrichtiger oder die Vervollständigung Ihrer gespeicherten Daten zu verlangen,
+                            <br/>
+                            gemäß Art. 17 DSGVO die Löschung Ihrer gespeicherten Daten zu verlangen,
+                            <br/>
+                            gemäß Art. 18 DSGVO die Einschränkung der Verarbeitung zu verlangen,
+                            <br/>
+                            gemäß Art. 20 DSGVO Ihre Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten,
+                            <br/>
+                            gemäß Art. 7 Abs. 3 DSGVO eine erteilte Einwilligung jederzeit zu widerrufen,
+                            <br/>
+                            sowie sich gemäß Art. 77 DSGVO bei einer Aufsichtsbehörde zu beschweren.
+                            <br/>
+                            Bitte wenden Sie sich zur Ausübung Ihrer Rechte an die oben genannte Kontaktadresse.
+                        </p>
+                        <br/>
 
-                        4. Zwecke der Datenverarbeitung
-                        Wir verarbeiten Ihre Daten zu folgenden Zwecken:
+                        <h2 className="font-bold">9. Datensicherheit</h2>
+                        <p>
+                            Wir setzen geeignete technische und organisatorische Sicherheitsmaßnahmen ein, um Ihre Daten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder unbefugten Zugriff durch Dritte zu schützen.
+                        </p>
+                        <br/>
 
-                        Organisation und Durchführung des Spendenlaufs
-
-                        Kommunikation mit Ihnen (z.B. Bestätigung der Anmeldung, wichtige Informationen zum Event)
-
-                        Abwicklung von Spenden und Ausstellung von Spendenbescheinigungen
-
-                        Einhaltung gesetzlicher Aufbewahrungspflichten
-
-                        5. Rechtsgrundlagen der Verarbeitung
-                        Die Verarbeitung Ihrer personenbezogenen Daten erfolgt auf Basis folgender Rechtsgrundlagen:
-
-                        Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung und vorvertragliche Maßnahmen)
-
-                        Art. 6 Abs. 1 lit. c DSGVO (Erfüllung rechtlicher Verpflichtungen, z.B. steuerrechtlicher Vorschriften)
-
-                        Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, z.B. für die Veröffentlichung von Fotos oder Namen auf der Website)
-
-                        6. Weitergabe von Daten
-                        Eine Weitergabe Ihrer personenbezogenen Daten an Dritte erfolgt nur, soweit dies für die Durchführung des Spendenlaufs notwendig ist oder wir gesetzlich dazu verpflichtet sind. Mögliche Empfänger können z.B. Zahlungsdienstleister oder Steuerbehörden sein.
-
-                        7. Dauer der Datenspeicherung
-                        Ihre personenbezogenen Daten werden nur so lange gespeichert, wie es für die oben genannten Zwecke erforderlich ist. Danach werden die Daten gelöscht, es sei denn, gesetzliche Aufbewahrungspflichten (z.B. nach Steuerrecht) verlangen eine längere Speicherung.
-
-                        8. Ihre Rechte
-                        Sie haben jederzeit das Recht:
-
-                        gemäß Art. 15 DSGVO Auskunft über Ihre gespeicherten Daten zu verlangen,
-
-                        gemäß Art. 16 DSGVO die Berichtigung unrichtiger oder die Vervollständigung Ihrer gespeicherten Daten zu verlangen,
-
-                        gemäß Art. 17 DSGVO die Löschung Ihrer gespeicherten Daten zu verlangen,
-
-                        gemäß Art. 18 DSGVO die Einschränkung der Verarbeitung zu verlangen,
-
-                        gemäß Art. 20 DSGVO Ihre Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten,
-
-                        gemäß Art. 7 Abs. 3 DSGVO eine erteilte Einwilligung jederzeit zu widerrufen,
-
-                        sowie sich gemäß Art. 77 DSGVO bei einer Aufsichtsbehörde zu beschweren.
-
-                        Bitte wenden Sie sich zur Ausübung Ihrer Rechte an die oben genannte Kontaktadresse.
-
-                        9. Datensicherheit
-                        Wir setzen geeignete technische und organisatorische Sicherheitsmaßnahmen ein, um Ihre Daten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder unbefugten Zugriff durch Dritte zu schützen.
-
-                        10. Änderungen dieser Datenschutzrichtlinie
-                        Wir behalten uns vor, diese Datenschutzrichtlinie gelegentlich anzupassen, um sie aktuellen rechtlichen Anforderungen oder Änderungen unseres Angebots anzupassen. Die jeweils aktuelle Version finden Sie jederzeit auf unserer Website.
+                        <h2 className="font-bold">10. Änderungen dieser Datenschutzrichtlinie</h2>
+                        <p>
+                            Wir behalten uns vor, diese Datenschutzrichtlinie gelegentlich anzupassen, um sie aktuellen rechtlichen Anforderungen oder Änderungen unseres Angebots anzupassen. Die jeweils aktuelle Version finden Sie jederzeit auf unserer Website.
+                        </p>
 
 
                     </div>
