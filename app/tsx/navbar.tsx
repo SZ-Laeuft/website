@@ -48,7 +48,7 @@ export default function Navbar() {
 
 
             <div className="hidden md:flex gap-8">
-                {["VORANMELDUNG", "STATISTIK", "GALERIE", "STARTZEIT", "TEAM"].map((item) => (
+                {["VORANMELDUNG", "GALERIE", "STARTZEIT", "TEAM"].map((item) => (
                     <Link
                         key={item}
                         href={`/${item.toLowerCase()}`}
@@ -76,7 +76,7 @@ export default function Navbar() {
                         <div className="w-6 h-0.5 bg-black -rotate-45 -translate-y-0.5"></div>
                     </div>
 
-                    {["VORANMELDUNG", "STATISTIK", "GALERIE", "STARTZEIT", "TEAM"].map((item) => (
+                    {["VORANMELDUNG", "GALERIE", "STARTZEIT", "TEAM"].map((item) => (
                         <Link
                             key={item}
                             href={`/${item.toLowerCase()}`}
