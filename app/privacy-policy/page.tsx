@@ -35,6 +35,31 @@ export default function Datenschutz() {
                             <h2 className="font-bold">1. Allgemeine Hinweise</h2>
                             <p>Wir freuen uns, dass Sie unsere Website besuchen und sich für unseren Spendenlauf engagieren. Der Schutz Ihrer persönlichen Daten ist uns sehr wichtig. Nachfolgend informieren wir Sie über die Erhebung, Verarbeitung und Nutzung Ihrer Daten im Rahmen der Nutzung unserer Website gemäß der geltenden Datenschutzgesetze, insbesondere der Datenschutz-Grundverordnung (DSGVO).</p>
                             <br/>
+=======
+        <div className="flex flex-col min-h-screen">
+            <Navbar />
+            <div className="flex-grow pt-32">
+                <motion.header
+                    className="text-4xl mt-10 md:pl-32 text-center md:text-left"
+                    style={{ fontFamily: "Franklin Gothic Heavy" }}
+                    variants={textVariants}
+                    initial="hidden"
+                    animate="visible"
+                >
+                    Datenschutzrichtlinien
+                </motion.header>
+                <motion.div
+                    className="flex flex-col md:flex-row justify-between px-6 mt-6 text-lg"
+                    style={{ fontFamily: "Franklin Gothic Medium" }}
+                    variants={textVariants}
+                    initial="hidden"
+                    animate="visible"
+                >
+                    <div className="max-w-full break-words text-base md:text-lg">
+                        <h2 className="font-bold">1. Allgemeine Hinweise</h2>
+                        <p>Wir freuen uns, dass Sie unsere Website besuchen und sich für unseren Spendenlauf engagieren. Der Schutz Ihrer persönlichen Daten ist uns sehr wichtig. Nachfolgend informieren wir Sie über die Erhebung, Verarbeitung und Nutzung Ihrer Daten im Rahmen der Nutzung unserer Website gemäß der geltenden Datenschutzgesetze, insbesondere der Datenschutz-Grundverordnung (DSGVO).</p>
+                        <br/>
+>>>>>>> 6f871963f7e0e81d4d759353629e522983f5c3a3
 
                             <h2 className="font-bold">2. Verantwortlicher</h2>
                             <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
