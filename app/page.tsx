@@ -2,7 +2,7 @@
 
 import Navbar from "@/app/tsx/navbar";
 import StadthalleImage from "./pictures/Stadthalle.png";
-import Logo from "./pictures/szl-pfp-transparent_border.png";
+import Logo from "./pictures/logo_szl.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import LogoSlider from "@/app/tsx/scroller";
@@ -24,7 +24,7 @@ const spanVariants = (direction: number) => ({
 
 const SectionHeader = ({ children }: { children: React.ReactNode }) => (
     <motion.header className="text-4xl mt-10 md:pl-32 text-center md:text-left pb-3"
-                   style={{ fontFamily: "Franklin Gothic Heavy" }} variants={textVariants} initial="hidden"
+                   style={{ fontFamily: "Franklin Gothic Medium" }} variants={textVariants} initial="hidden"
                    animate="visible">
         {children}
     </motion.header>
@@ -33,7 +33,7 @@ const SectionHeader = ({ children }: { children: React.ReactNode }) => (
 const SectionContent = ({ children }: { children: React.ReactNode }) => (
     <motion.div
         className="flex flex-col md:flex-row justify-between px-6 md:ml-32 text-lg leading-relaxed md:border-l-4 border-black pl-4 border-opacity-20 md:pr-32"
-        style={{ fontFamily: "Franklin Gothic Medium" }} variants={textVariants} initial="hidden"
+        style={{ fontFamily: "Franklin Gothic Light" }} variants={textVariants} initial="hidden"
         animate="visible">
         <div className="max-w-full break-words text-base md:text-lg">
             {children}

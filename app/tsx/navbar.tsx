@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Image from "next/image";
-import Logo from "@/app/pictures/szl-pfp-transparent_border.png";
+import Logo from "@/app/pictures/logo_szl.png";
 
 export default function Navbar() {
     const pathname = usePathname();
@@ -30,12 +30,12 @@ export default function Navbar() {
                          alt="SZ Läuft Logo"
                          width={400}
                          height={400}
-                         className="w-[25vw] h-[25vw] max-w-[70px] min-w-[70px] max-h-[70px] min-h-[70px] drop-shadow-md"
+                         className="w-[25vw] h-[25vw] max-w-[65px] min-w-[65px] max-h-[65px] min-h-[65px] drop-shadow-md"
                          priority
                      />
                 </span>
                 <span className="text-2xl font-bold text-black tracking-wide" style={{ fontFamily: 'Franklin Gothic Heavy' }}>
-                    SZ-LÄUFT
+                      SZ-LÄUFT
                 </span>
             </Link>
 
