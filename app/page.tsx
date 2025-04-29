@@ -66,10 +66,7 @@ export default function Home() {
                         animate="visible"
                     >
                         <motion.span className="block" variants={spanVariants(-1)} initial="hidden" animate="visible">
-                            SZ-
-                        </motion.span>
-                        <motion.span className="block" variants={spanVariants(-1)} initial="hidden" animate="visible">
-                            LÄUFT
+                            SZ-LÄUFT
                         </motion.span>
                     </motion.h1>
 
@@ -224,9 +221,6 @@ export default function Home() {
                         {/* Team Section */}
                         {activeTab === "Team" && (
                             <div>
-                                <motion.div initial="hidden" animate="visible" variants={textVariants}>
-                                    <h2 className="text-2xl font-bold mt-4">Team</h2>
-                                </motion.div>
                                 <motion.div
                                     initial="hidden"
                                     animate="visible"
@@ -258,9 +252,6 @@ export default function Home() {
                         {/* Strecke Section */}
                         {activeTab === "Strecke" && (
                             <div>
-                                <motion.div initial="hidden" animate="visible" variants={textVariants}>
-                                    <h2 className="text-2xl font-bold mt-4">Strecke</h2>
-                                </motion.div>
                                 <motion.div
                                     className="md:border-l-4 border-black md:pl-4 border-opacity-20"
                                     initial="hidden"
