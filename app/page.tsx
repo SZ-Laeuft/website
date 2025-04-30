@@ -32,8 +32,8 @@ const SectionHeader = ({ children }: { children: React.ReactNode }) => (
 
 const SectionContent = ({ children }: { children: React.ReactNode }) => (
     <motion.div
-        className="flex flex-col md:flex-row justify-between px-6 md:ml-32 text-lg leading-relaxed md:border-l-4 border-black pl-4 border-opacity-20 md:pr-32"
-        style={{ fontFamily: "Franklin Gothic Light" }} variants={textVariants} initial="hidden"
+        className="flex flex-col md:flex-row justify-between px-6 md:ml-32 text-lg leading-relaxed md:border-l-4 border-black pl-4 border-opacity-20 md:pr-32 tracking-wide"
+        style={{ fontFamily: "Arial" }} variants={textVariants} initial="hidden"
         animate="visible">
         <div className="max-w-full break-words text-base md:text-lg">
             {children}

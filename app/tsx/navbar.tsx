@@ -34,7 +34,7 @@ export default function Navbar() {
                          priority
                      />
                 </span>
-                <span className="text-2xl font-bold text-black tracking-wide" style={{ fontFamily: 'Franklin Gothic Heavy' }}>
+                <span className="text-2xl font-bold text-black tracking-wide" style={{ fontFamily: 'Franklin Gothic Medium' }}>
                       SZ-LÄUFT
                 </span>
             </Link>
@@ -52,7 +52,7 @@ export default function Navbar() {
                     <Link
                         key={item}
                         href={`/${item.toLowerCase()}`}
-                        className={`text-lg font-medium no-underline text-black hover:text-[#00aaca] relative group tracking-wide ${
+                        className={`text-lg font-medium no-underline text-black hover:text-[#00aaca] relative group tracking-wider ${
                             pathname === `/${item.toLowerCase()}` ? 'text-[#00aaca]' : ''
                         }`}
                         style={{ fontFamily: 'Franklin Gothic Medium' }}
@@ -80,10 +80,10 @@ export default function Navbar() {
                         <Link
                             key={item}
                             href={`/${item.toLowerCase()}`}
-                            className={`text-2xl font-medium no-underline text-black hover:text-[#00aaca] relative group tracking-wide ${
+                            className={`text-2xl font-medium no-underline text-black hover:text-[#00aaca] relative group ${
                                 pathname === `/${item.toLowerCase()}` ? 'text-[#00aaca]' : ''
                             }`}
-                            style={{ fontFamily: 'Franklin Gothic Medium' }}
+                            style={{ fontFamily: 'Franklin Gothic Medium'}}
                             onClick={toggleMenu}
                         >
                             {item}

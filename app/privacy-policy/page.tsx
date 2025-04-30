@@ -25,8 +25,8 @@ export default function Datenschutz() {
                         Datenschutzrichtlinien
                     </motion.header>
                     <motion.div
-                        className="flex flex-col md:flex-row justify-between mt-6 md:ml-32 text-lg leading-relaxed md:pr-32"
-                        style={{ fontFamily: "Franklin Gothic Medium" }}
+                        className="flex flex-col md:flex-row justify-between mt-6 md:ml-32 text-lg leading-relaxed md:pr-32 tracking-wide"
+                        style={{ fontFamily: "Arial" }}
                         variants={textVariants}
                         initial="hidden"
                         animate="visible"
