@@ -34,7 +34,10 @@ export default function Datenschutz() {
                         <div className="max-w-full break-words text-base md:text-lg">
                             <h2 className="font-bold">1. Allgemeine Hinweise</h2>
                             <p>Wir freuen uns, dass Sie unsere Website besuchen und sich für unseren Spendenlauf engagieren. Der Schutz Ihrer personenbezogenen Daten ist uns sehr wichtig. Nachfolgend informieren wir Sie über die Erhebung, Verarbeitung und Nutzung Ihrer Daten im Rahmen der Nutzung unserer Website und unserer Veranstaltung gemäß der geltenden Datenschutzgesetze, insbesondere der Datenschutz-Grundverordnung (DSGVO).
-                             Schülerinnen und Schüler des Schulzentrums Ybbs sind dazu verpflichtet beim Lauf teilzunehmen. Zudem ist nicht auszuschließen, dass auch andere Medien (wie etwa die NÖN, Bezirkszeitung usw.) vor Ort sein und Foto- bzw. Videoaufnahmen für ihre eigenen Kanäle anfertigen werden.</p>
+                             Schülerinnen und Schüler des Schulzentrums Ybbs sind dazu verpflichtet beim Lauf teilzunehmen. Zudem ist nicht auszuschließen, dass auch andere Medien (wie etwa die NÖN, Bezirkszeitung usw.) vor Ort sein und Foto- bzw. Videoaufnahmen für ihre eigenen Kanäle anfertigen werden.
+                            <br/>
+                                <span className="font-bold italic">Hinweis: Mit Ihrer Anmeldung zum Spendenlauf – unabhängig davon, auf welchem Weg diese erfolgt – stimmen Sie der Verarbeitung Ihrer Daten auf unserer Website sowie in der Laufverwaltungssoftware ausdrücklich zu (Einwilligung gemäß DSGVO).</span>
+                            </p>
                             <br/>
 
                             <h2 className="font-bold">2. Verantwortlicher</h2>
@@ -61,7 +64,7 @@ export default function Datenschutz() {
                                 <br/>
                                 verwendeter Browser und ggf. das Betriebssystem Ihres Rechners sowie der Name Ihres Access-Providers
                                 <br/>
-                                Diese Daten werden ausschließlich zur Gewährleistung eines reibungslosen Verbindungsaufbaus, zur Systemsicherheit sowie zu administrativen Zwecken verarbeitet.
+                                Diese Daten werden ausschließlich zur Gewährleistung eines reibungslosen Verbindungsaufbaus, zur Systemsicherheit sowie zu administrativen Zwecken verarbeitet und sind für die Funktion der Website unerlässlich.
                             </p>
                             <br/>
 
@@ -89,7 +92,6 @@ export default function Datenschutz() {
                                 <br/>
                                 Nach dem Event werden ausgewählte Daten (Name, Schultyp, Klasse, Rundenzahl) in der Statistik auf unserer Website veröffentlicht.
                                 <br/>
-                                Hinweis: Mit Ihrer Anmeldung zum Spendenlauf – unabhängig davon, auf welchem Weg diese erfolgt – stimmen Sie der Verarbeitung Ihrer Daten auf unserer Website sowie in der Laufverwaltungssoftware ausdrücklich zu (Einwilligung gemäß DSGVO).
                             </p>
                             <br/>
 

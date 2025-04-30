@@ -65,7 +65,7 @@ export default function Home() {
                         initial="hidden"
                         animate="visible"
                     >
-                        <motion.span className="block" variants={spanVariants(-1)} initial="hidden" animate="visible">
+                        <motion.span className="block" style={{textShadow: "3px 3px 3px black"}} variants={spanVariants(-1)} initial="hidden" animate="visible">
                             SZ-LÄUFT
                         </motion.span>
                     </motion.h1>
