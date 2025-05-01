@@ -1,50 +1,117 @@
-'use client';
+'use client'
 
+import React, { useState } from "react";
 import Navbar from "@/app/tsx/navbar";
+import Footer from "@/app/tsx/footer";
 import { motion } from "framer-motion";
-import Footer from "../tsx/footer";
 
-const textVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeInOut" } }
-};
+export default function VoranmeldungPage() {
+    const [formData, setFormData] = useState({
+        vorname: "",
+        nachname: "",
+        schultyp: "",
+        klasse: "",
+        teilnahmeInfo: "",
+    });
 
-export default function Voranmeldung() {
+    const textVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeInOut" } }
+    };
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({ ...prev, [name]: value }));
+    };
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        console.log("Form submitted:", formData);
+        // Daten an Backend schicken oder verarbeiten
+    };
+
+
     return (
-        <div className="flex flex-col min-h-screen">
+        <>
             <Navbar />
-            <div className="flex-grow pt-32">
-                <motion.header
-                    className="text-4xl mt-10 md:pl-32 text-center md:text-left"
-                    style={{fontFamily: "Franklin Gothic Heavy"}}
-                    variants={textVariants}
-                    initial="hidden"
-                    animate="visible"
+            <motion.div
+                className="min-h-screen  flex items-center justify-center p-4"
+                style={{ fontFamily: "Arial" }}
+                variants={textVariants}
+                initial="hidden"
+                animate="visible"
+            >
+                <form
+                    onSubmit={handleSubmit}
+                    className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md space-y-6"
                 >
-                    Voranmeldung
-                </motion.header>
-
-                <motion.div
-                    className="flex flex-col md:flex-row justify-between px-6 mt-6 md:ml-32 text-lg leading-relaxed md:border-l-4 border-black pl-4 border-opacity-20 md:pr-32"
-                    style={{fontFamily: "Franklin Gothic Medium"}}
-                    variants={textVariants}
-                    initial="hidden"
-                    animate="visible"
-                >
-                    <div className="max-w-full break-words text-base md:text-lg">
-                        Trage dich jetzt in das Google Form an um als offizieler Frühstarter loszulaufen bitte beachte <strong>dient nur für Schüler des SZ-Ybbs</strong>.
-                    </div>
-                </motion.div>
-                <div className="w-full flex justify-center p-4 pt-16">
-                    <iframe
-                        src="https://forms.gle/HnNSABuuzcukQojr6 "
-                        className="w-full md:w-3/4 lg:w-1/2 h-screen border rounded-lg"
+                    <motion.header
+                        className="text-4xl text-center"
+                        style={{ fontFamily: "Franklin Gothic Heavy" }}
+                        variants={textVariants}
+                        initial="hidden"
+                        animate="visible"
                     >
-                    </iframe>
-                </div>
+                        Voranmeldung
+                    </motion.header>
 
-            </div>
+                    <div className="grid grid-cols-2 gap-4">
+                        <input
+                            name="vorname"
+                            placeholder="Vorname"
+                            value={formData.vorname}
+                            onChange={handleChange}
+                            required
+                            className="border border-gray-300 rounded-lg px-4 py-2 w-full"
+                        />
+                        <input
+                            name="nachname"
+                            placeholder="Nachname"
+                            value={formData.nachname}
+                            onChange={handleChange}
+                            required
+                            className="border border-gray-300 rounded-lg px-4 py-2 w-full"
+                        />
+                    </div>
+
+                    <select
+                        name="schultyp"
+                        value={formData.schultyp}
+                        onChange={handleChange} //rot highlighted, idk why chief es funktioniert scheinbar though
+                        required
+                        className="border border-gray-300 rounded-lg px-4 py-2 w-full bg-white"
+                    >
+                        <option value="" disabled>Schultyp wählen</option>
+                        <option value="HAK">HAK</option>
+                        <option value="HTL">HTL</option>
+                    </select>
+
+                    <input
+                        name="klasse"
+                        placeholder="Klasse (z.B. 3BHIT)"
+                        value={formData.klasse}
+                        onChange={handleChange}
+                        required
+                        className="border border-gray-300 rounded-lg px-4 py-2 w-full"
+                    />
+
+                    <textarea
+                        name="teilnahmeInfo"
+                        placeholder="Angaben zur Teilnahme (z.B. Teamname, Startzeit)"
+                        value={formData.teilnahmeInfo}
+                        onChange={handleChange}
+                        className="border border-gray-300 rounded-lg px-4 py-2 w-full resize-none h-24"
+                    />
+
+                    <button
+                        type="submit"
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg px-4 py-2 w-full"
+                    >
+                        Absenden
+                    </button>
+                </form>
+            </motion.div>
             <Footer/>
-        </div>
+        </>
     );
 }

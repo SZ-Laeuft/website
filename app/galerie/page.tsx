@@ -26,13 +26,13 @@ export default function Galerie() {
 
                 <motion.div
                     className="flex flex-col md:flex-row justify-between px-6 mt-6 md:ml-32 text-lg leading-relaxed md:border-l-4 border-black pl-4 border-opacity-20 md:pr-32"
-                    style={{ fontFamily: "Franklin Gothic Medium" }}
+                    style={{ fontFamily: "Arial" }}
                     variants={textVariants}
                     initial="hidden"
                     animate="visible"
                 >
                     <div className="max-w-full break-words text-base md:text-lg">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                        Hier kommen nach dem Event alle tollen Fotos hin :)
                     </div>
                 </motion.div>
             </div>
