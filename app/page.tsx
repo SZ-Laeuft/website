@@ -9,7 +9,7 @@ import LogoSlider from "@/app/tsx/scroller";
 import Footer from "./tsx/footer";
 import { useState } from "react";
 import Group from "./pictures/all.jpg"
-import Ö3 from "./pictures/ö3_logo.png"
+import Spende from "./pictures/hilfeimeigenenland.png"
 
 // Animation Variants
 const textVariants = {
@@ -110,9 +110,9 @@ export default function Home() {
                 <SectionHeader>Spendenempfänger</SectionHeader>
                 <SectionContent>
                     <p>
-                        Der diesjährige Spendenempfänger unserer Aktion ist das Ö3-Weihnachtswunder.
-                        Diese großartige Initiative unterstützt Menschen in Not und sorgt dafür, dass auch sie an
-                        Weihnachten Hoffnung und Freude erleben können
+                        Der diesjährige Spendenempfänger unserer Aktion ist Hilfe im eigenen Land.
+                        Diese großartige Initiative unterstützt Menschen in Not und setzt sich für
+                        Menschen die von Naturkatastrophen getroffen wurden ein.
                     </p>
                 </SectionContent>
                 <motion.div
@@ -122,7 +122,7 @@ export default function Home() {
                     animate="visible"
                     style={{padding: '20px 0'}}
                 >
-                    <Image src={Ö3} alt="Ö3-logo" className="mx-auto"/>
+                    <Image src={Spende} alt="Ö3-logo" className="mx-auto"/>
                 </motion.div>
 
 
