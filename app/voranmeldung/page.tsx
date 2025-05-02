@@ -19,7 +19,7 @@ export default function VoranmeldungPage() {
         visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeInOut" } }
     };
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
@@ -48,9 +48,6 @@ export default function VoranmeldungPage() {
                     <motion.header
                         className="text-4xl text-center"
                         style={{ fontFamily: "Franklin Gothic Heavy" }}
-                        variants={textVariants}
-                        initial="hidden"
-                        animate="visible"
                     >
                         Voranmeldung
                     </motion.header>
@@ -77,7 +74,7 @@ export default function VoranmeldungPage() {
                     <select
                         name="schultyp"
                         value={formData.schultyp}
-                        onChange={handleChange} //rot highlighted, idk why chief es funktioniert scheinbar though
+                        onChange={handleChange}
                         required
                         className="border border-gray-300 rounded-lg px-4 py-2 w-full bg-white"
                     >
@@ -88,7 +85,7 @@ export default function VoranmeldungPage() {
 
                     <input
                         name="klasse"
-                        placeholder="Klasse (z.B. 3BHIT)"
+                        placeholder="Klasse"
                         value={formData.klasse}
                         onChange={handleChange}
                         required
@@ -97,7 +94,7 @@ export default function VoranmeldungPage() {
 
                     <textarea
                         name="teilnahmeInfo"
-                        placeholder="Angaben zur Teilnahme (z.B. Teamname, Startzeit)"
+                        placeholder="Anmerkungen"
                         value={formData.teilnahmeInfo}
                         onChange={handleChange}
                         className="border border-gray-300 rounded-lg px-4 py-2 w-full resize-none h-24"
