@@ -92,7 +92,7 @@ export default function Home() {
                 <SectionContent>
                     <p>
                         Das SZ-Läuft ist ein Laufevent, das am 25. Juni 2025 stattfindet und dazu dient, Spenden für
-                        xxxxxxx zu sammeln.
+                        die Katastrophenhilfe Österreich zu sammeln.
                     </p>
                     <br/>
                     <p>
