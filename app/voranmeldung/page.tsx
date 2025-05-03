@@ -102,7 +102,7 @@ export default function VoranmeldungPage() {
 
                     <button
                         type="submit"
-                        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg px-4 py-2 w-full"
+                        className="bg-black hover:bg-gray-800 text-white font-semibold rounded-lg px-4 py-2 w-full"
                     >
                         Absenden
                     </button>

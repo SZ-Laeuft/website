@@ -4,12 +4,12 @@ import Navbar from "@/app/tsx/navbar";
 import { motion } from "framer-motion";
 import Footer from "../tsx/footer";
 import Image from "next/image";
-import Projectlead from "../pictures/lead.jpg"
-import Teamleads from "../pictures/teamleads.jpg"
-import TeamCatering from "../pictures/catering.jpg"
-import TeamPromotion from "../pictures/promotion.jpg"
-import TeamRunning from "../pictures/running.jpg"
-import TeamSoftware from "../pictures/software.jpg"
+import Projectlead from "@/public/pictures/lead.jpg"
+import Teamleads from "@/public/pictures/teamleads.jpg"
+import TeamCatering from "@/public/pictures/catering.jpg"
+import TeamPromotion from "@/public/pictures/promotion.jpg"
+import TeamRunning from "@/public/pictures/running.jpg"
+import TeamSoftware from "@/public/pictures/software.jpg"
 
 const textVariants = {
     hidden: { opacity: 0, y: 50 },

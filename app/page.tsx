@@ -1,15 +1,15 @@
 'use client';
 
 import Navbar from "@/app/tsx/navbar";
-import StadthalleImage from "./pictures/Stadthalle.png";
-import Logo from "./pictures/logo_szl.png";
+import StadthalleImage from "@/public/pictures/Stadthalle.png";
+import Logo from "@/public/pictures/logo_szl.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import LogoSlider from "@/app/tsx/scroller";
 import Footer from "./tsx/footer";
 import { useState } from "react";
-import Group from "./pictures/all.jpg"
-import Spende from "./pictures/hilfeimeigenenland.png"
+import Group from "@/public/pictures/all.jpg"
+import Spende from "@/public/pictures/hilfeimeigenenland.png"
 
 // Animation Variants
 const textVariants = {
@@ -137,9 +137,7 @@ export default function Home() {
                 <SectionHeader>Ablauf</SectionHeader>
                 <SectionContent>
                     <p>
-                        Die Anmeldung für die Frühstarter beginnt um xxxxx, sodass alle angemeldeten Personen um
-                        xxxxx
-                        loslaufen können. In den Startzeiten ist ersichtlich, welche Teilnehmer wann zur Anmeldung
+                        Die Start des Laufevents findet um 8:00 statt. In den Startzeiten ist ersichtlich, welche Teilnehmer wann zur Anmeldung
                         kommen und wann sie starten.
                         Nach jeder Runde muss der Scanner am Startbereich mit dem erhaltenen NFC-Armband passiert
                         werden, um die gelaufenen Runden zu erfassen.

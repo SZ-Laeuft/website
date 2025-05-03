@@ -6,9 +6,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Navigation, EffectCoverflow } from 'swiper/modules';
 import Image from 'next/image';
-import LogoHAKHASITHTL from "../pictures/LogoHAKHASITHTL_gradient.png";
-import Uniqua from "../pictures/Uniqa_Österreich_logo.png";
-import CYGSCHEID from "../pictures/CYGSCHEID_logo.png";
+import LogoHAKHASITHTL from "@/public/pictures/LogoHAKHASITHTL_gradient.png";
+import Uniqua from "@/public/pictures/Uniqa_Oesterreich_logo.png";
+import CYGSCHEID from "@/public/pictures/CYGSCHEID_logo.png";
 
 const LogoSlider = () => {
     const logos = Array.from({ length: 10 }, (_, index) => {

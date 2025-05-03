@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo from "@/app/pictures/logo_szl_notext.png";
+import Logo from "@/public/pictures/logo_szl_notext.png";
 import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {

@@ -3,11 +3,9 @@ const nextConfig = {
     devIndicators: {
         enabled: false,
     },
+    images: {
+        unoptimized: true,
+    },
 };
 
 module.exports = nextConfig;
-
-module.exports = {
-    output: 'export',
-}
-

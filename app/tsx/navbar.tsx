@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Image from "next/image";
-import Logo from "@/app/pictures/logo_szl_notext.png";
+import Logo from "@/public/pictures/logo_szl_notext.png";
 
 export default function Navbar() {
     const pathname = usePathname();
