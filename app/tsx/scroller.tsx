@@ -9,11 +9,13 @@ import Image from 'next/image';
 import LogoHAKHASITHTL from "@/public/pictures/LogoHAKHASITHTL_gradient.png";
 import Uniqua from "@/public/pictures/Uniqa_Oesterreich_logo.png";
 import CYGSCHEID from "@/public/pictures/CYGSCHEID_logo.png";
+import Megaplex from "@/public/pictures/logo_megaplex_full_large.png";
+import EasyDrivers from "@/public/pictures/ED_Logo_Fahrschule_CMYK_auf_gelb.jpg";
 
 const LogoSlider = () => {
     const logos = Array.from({ length: 10 }, (_, index) => {
-        const cycle = [LogoHAKHASITHTL, Uniqua, CYGSCHEID];
-        return cycle[index % 3]; // Repeats the pattern for all 10 slots
+        const cycle = [LogoHAKHASITHTL, Uniqua, CYGSCHEID, Megaplex, EasyDrivers];
+        return cycle[index % 5]; // Repeats the pattern for all 10 slots
     });
 
     return (
