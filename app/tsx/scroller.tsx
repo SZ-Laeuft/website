@@ -11,11 +11,29 @@ import Uniqua from "@/public/pictures/Uniqa_Oesterreich_logo.png";
 import CYGSCHEID from "@/public/pictures/CYGSCHEID_logo.png";
 import Megaplex from "@/public/pictures/logo_megaplex_full_large.png";
 import EasyDrivers from "@/public/pictures/ED_Logo_Fahrschule_CMYK_auf_gelb.jpg";
+import Wuesterstrom from "@/public/pictures/wuesterstrom_logovarianten_100x30mm.png"
+import VolksBank from "@/public/pictures/volksbank-oesterreich.webp"
+
+const logoSources = [
+    { logo: LogoHAKHASITHTL, link: 'https://sz-ybbs.ac.at' },
+    { logo: Uniqua, link: 'https://uniqua.at' },
+    { logo: CYGSCHEID, link: 'https://cyg-scheid.com' },
+    { logo: Megaplex, link: 'https://megaplex.at' },
+    { logo: EasyDrivers, link: 'https://easydrivers.at' },
+    { logo: Wuesterstrom, link: 'https://wuesterstrom.at' },
+    { logo: VolksBank, link: 'https://volksbank.at' },
+];
+
 
 const LogoSlider = () => {
     const logos = Array.from({ length: 10 }, (_, index) => {
-        const cycle = [LogoHAKHASITHTL, Uniqua, CYGSCHEID, Megaplex, EasyDrivers];
-        return cycle[index % 5]; // Repeats the pattern for all 10 slots
+        //const cycle = [LogoHAKHASITHTL, Uniqua, CYGSCHEID, Megaplex, EasyDrivers, Wuesterstrom, VolksBank];
+        const item = logoSources[index % logoSources.length];
+        //return cycle[index % 7]; // Repeats the pattern for all 10 slots
+        return {
+            logo: item.logo,
+            link: item.link
+        };
     });
 
     return (
@@ -50,17 +68,19 @@ const LogoSlider = () => {
         >
             {logos.map((logo, index) => (
                 <SwiperSlide key={index}>
-                    <div style={{ position: 'relative', width: '100%', height: '130px' }}>
-                        <Image
-                            src={logo}
-                            alt={`Logo ${index + 1}`}
-                            fill
-                            style={{ objectFit: 'contain' }}
-                            priority={index < 5}
-                            loading="eager"
-                            className="swiper-slide-image"
-                        />
-                    </div>
+                    <a href={logo.link} target="_blank" rel="noopener noreferrer">
+                        <div style={{ position: 'relative', width: '100%', height: '130px' }}>
+                            <Image
+                                src={logo.logo}
+                                alt={`Logo ${index + 1}`}
+                                fill
+                                style={{ objectFit: 'contain' }}
+                                priority={index < 5}
+                                loading="eager"
+                                className="swiper-slide-image"
+                            />
+                        </div>
+                    </a>
                 </SwiperSlide>
             ))}
         </Swiper>
