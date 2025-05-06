@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Navigation, EffectCoverflow } from 'swiper/modules';
 import Image from 'next/image';
 import LogoHAKHASITHTL from "@/public/pictures/LogoHAKHASITHTL_gradient.png";
-import Uniqua from "@/public/pictures/Uniqa_Oesterreich_logo.png";
+import Uniqa from "@/public/pictures/Uniqa_Oesterreich_logo.png";
 import CYGSCHEID from "@/public/pictures/CYGSCHEID_logo.png";
 import Megaplex from "@/public/pictures/logo_megaplex_full_large.png";
 import EasyDrivers from "@/public/pictures/ED_Logo_Fahrschule_CMYK_auf_gelb.jpg";
@@ -15,8 +15,8 @@ import Wuesterstrom from "@/public/pictures/wuesterstrom_logovarianten_100x30mm.
 import VolksBank from "@/public/pictures/volksbank-oesterreich.webp"
 
 const logoSources = [
-    { logo: LogoHAKHASITHTL, link: 'https://sz-ybbs.ac.at' },
-    { logo: Uniqua, link: 'https://uniqua.at' },
+    { logo: LogoHAKHASITHTL, link: 'https://www.sz-ybbs.ac.at' },
+    { logo: Uniqa, link: 'https://uniqa.at' },
     { logo: CYGSCHEID, link: 'https://cyg-scheid.com' },
     { logo: Megaplex, link: 'https://megaplex.at' },
     { logo: EasyDrivers, link: 'https://easydrivers.at' },
@@ -27,9 +27,7 @@ const logoSources = [
 
 const LogoSlider = () => {
     const logos = Array.from({ length: 10 }, (_, index) => {
-        //const cycle = [LogoHAKHASITHTL, Uniqua, CYGSCHEID, Megaplex, EasyDrivers, Wuesterstrom, VolksBank];
         const item = logoSources[index % logoSources.length];
-        //return cycle[index % 7]; // Repeats the pattern for all 10 slots
         return {
             logo: item.logo,
             link: item.link
