@@ -50,7 +50,7 @@ export default function Home() {
 
 
             {/* Hero Section */}
-            <div className="relative h-[600px] w-full flex items-center justify-center pt-5">
+            <div className="relative h-[600px] w-full flex items-center justify-center pt-5 ">
                 <Image
                     src={StadthalleImage}
                     alt="Background"
