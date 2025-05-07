@@ -17,7 +17,7 @@ export default function Navbar() {
 
     return (
         <motion.nav
-            className="fixed flex z-50 items-center justify-between py-6 px-10 bg-white shadow w-full h-[10.5vh]"
+            className="sticky flex z-50 items-center justify-between py-6 px-10 bg-white shadow w-full h-[10.5vh] top-0"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}

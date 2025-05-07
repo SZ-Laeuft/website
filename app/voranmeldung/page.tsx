@@ -81,6 +81,7 @@ export default function VoranmeldungPage() {
                         <option value="" disabled>Schultyp wählen</option>
                         <option value="HAK">HAK</option>
                         <option value="HTL">HTL</option>
+                        <option value="HAS">HAS</option>
                     </select>
 
                     <input
@@ -90,14 +91,6 @@ export default function VoranmeldungPage() {
                         onChange={handleChange}
                         required
                         className="border border-gray-300 rounded-lg px-4 py-2 w-full"
-                    />
-
-                    <textarea
-                        name="teilnahmeInfo"
-                        placeholder="Anmerkungen"
-                        value={formData.teilnahmeInfo}
-                        onChange={handleChange}
-                        className="border border-gray-300 rounded-lg px-4 py-2 w-full resize-none h-24"
                     />
 
                     <button

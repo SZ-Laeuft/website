@@ -48,8 +48,9 @@ export default function Home() {
         <>
             <Navbar />
 
+
             {/* Hero Section */}
-            <div className="relative h-[600px] w-full flex items-center justify-center">
+            <div className="relative h-[600px] w-full flex items-center justify-center pt-5">
                 <Image
                     src={StadthalleImage}
                     alt="Background"
@@ -137,7 +138,7 @@ export default function Home() {
                 <SectionHeader>Ablauf</SectionHeader>
                 <SectionContent>
                     <p>
-                        Die Start des Laufevents findet um 8:00 statt. In den Startzeiten ist ersichtlich, welche Teilnehmer wann zur Anmeldung
+                        Der Start des Laufevents findet um 8:00 statt. In den Startzeiten ist ersichtlich, welche Teilnehmer wann zur Anmeldung
                         kommen und wann sie starten.
                         Nach jeder Runde muss der Scanner am Startbereich mit dem erhaltenen NFC-Armband passiert
                         werden, um die gelaufenen Runden zu erfassen.
