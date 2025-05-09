@@ -28,6 +28,21 @@ transition: filter 0.5s ease;
   filter: brightness(100%);
 }
 
+.customRouteSlider .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+.customRouteSlider .swiper-button-prev{
+  color:white;
+  text-shadow: 2px 3px 3px black;
+}
+
+.customRouteSlider .swiper-button-next {
+  color:white;
+  text-shadow: 2px 3px 3px black;
+
+}
+
 
 
 @layer base {

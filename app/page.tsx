@@ -11,11 +11,14 @@ import { useState } from "react";
 import Group from "@/public/pictures/all.jpg"
 import Spende from "@/public/pictures/hilfeimeigenenland.png"
 
+import RouteSlider from "@/app/tsx/routescroller"
+
 // Animation Variants
 const textVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeInOut" } }
 };
+
 
 const spanVariants = (direction: number) => ({
     hidden: { opacity: 0, x: direction * 50 },
@@ -252,24 +255,28 @@ export default function Home() {
                         {activeTab === "Strecke" && (
                             <div>
                                 <motion.div
-                                    className="md:border-l-4 border-black md:pl-4 border-opacity-20"
                                     initial="hidden"
                                     animate="visible"
                                     variants={textVariants}
                                 >
-                                    <p className="md:p-4 rounded-md mt-2">
-                                        Die Laufstrecke führt rund um die Stadthalle. Nach jeder Runde muss der Scanner
-                                        am
-                                        Startbereich mit dem NFC-Armband passiert werden, um die gelaufenen Runden zu
-                                        erfassen.
-                                        Neben dem Lauf gibt es auch ein Alternativprogramm in der Stadthalle.
-                                    </p>
+                                    <div>
+                                        <p className="md:p-4 md:border-l-4 border-black md:pl-4 border-opacity-20 mt-2">
+                                            Die Laufstrecke führt rund um die Stadthalle. Nach jeder Runde muss der Scanner
+                                            am
+                                            Startbereich mit dem NFC-Armband passiert werden, um die gelaufenen Runden zu
+                                            erfassen.
+                                            Neben dem Lauf gibt es auch ein Alternativprogramm in der Stadthalle.
+                                        </p>
+                                    </div>
+
+                                    <RouteSlider />
+
                                 </motion.div>
                             </div>
-                        )}
+                            )}
+                        </div>
                     </div>
                 </div>
-            </div>
             {/* Footer */}
             <Footer/>
         </>
