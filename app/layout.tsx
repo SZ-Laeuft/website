@@ -1,6 +1,8 @@
 import { MantineProvider } from '@mantine/core';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import LayoutWrapper from './LayoutWrapper';
+
 import './css/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -18,11 +20,11 @@ export default function RootLayout({
     return (
         <html lang="de">
         <head>
-            <meta name="darkreader-lock"/>
+            <meta name="darkreader-lock" />
         </head>
         <body className={inter.className}>
         <MantineProvider>
-            {children}
+            <LayoutWrapper>{children}</LayoutWrapper>
         </MantineProvider>
         </body>
         </html>

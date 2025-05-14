@@ -13,6 +13,20 @@
   --navbar-height: 0px;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #f1f5f9;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-content {
+  padding-top: var(--navbar-height);
+}
+
 .main-content {
   padding-top: var(--navbar-height);
 }
