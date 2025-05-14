@@ -27,7 +27,7 @@ const RouteSlider = () => {
             >
                 {images.map((image, index) => (
                     <SwiperSlide key={index}>
-                        <div className="flex h-full w-full items-center justify-center">
+                        <div className="flex h-[1000px] w-full items-center justify-center">
                             <Image
                                 src={image.src}
                                 alt={image.alt}
