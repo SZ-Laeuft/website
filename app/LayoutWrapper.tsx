@@ -21,7 +21,7 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
     return (
         <>
             <header ref={navbarRef} className="navbar">
-                <div className="p-4 text-xl font-bold"></div>
+                <div className="p-4"></div>
             </header>
             <main className="main-content">{children}</main>
         </>

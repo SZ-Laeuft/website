@@ -13,6 +13,7 @@ import Megaplex from "@/public/pictures/logo_megaplex_full_large.png";
 import EasyDrivers from "@/public/pictures/ED_Logo_Fahrschule_CMYK_auf_gelb.jpg";
 import Wuesterstrom from "@/public/pictures/wuesterstrom_logovarianten_100x30mm.png"
 import VolksBank from "@/public/pictures/volksbank-oesterreich.webp"
+import LukIt from "@/public/pictures/lukit-logo-blue-rgb.svg"
 
 const logoSources = [
     { logo: LogoHAKHASITHTL, link: 'https://www.sz-ybbs.ac.at' },
@@ -22,6 +23,7 @@ const logoSources = [
     { logo: EasyDrivers, link: 'https://easydrivers.at' },
     { logo: Wuesterstrom, link: 'https://wuesterstrom.at' },
     { logo: VolksBank, link: 'https://volksbank.at' },
+    { logo: LukIt, link: 'https://lukit.at'}
 ];
 
 
@@ -47,7 +49,7 @@ const LogoSlider = () => {
                 1024: { slidesPerView: 7 },
                 1280: { slidesPerView: 9 },
             }}
-            spaceBetween={10}
+            spaceBetween={18}
             loop={true}
             autoplay={{
                 delay: 2000,
@@ -58,7 +60,7 @@ const LogoSlider = () => {
             coverflowEffect={{
                 rotate: 0,
                 stretch: 0,
-                depth: 200,
+                depth: 220,
                 modifier: 2.5,
                 slideShadows: false,
             }}
