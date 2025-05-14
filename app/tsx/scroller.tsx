@@ -28,7 +28,7 @@ const logoSources = [
 
 
 const LogoSlider = () => {
-    const logos = Array.from({ length: 10 }, (_, index) => {
+    const logos = Array.from({ length: 8 }, (_, index) => {
         const item = logoSources[index % logoSources.length];
         return {
             logo: item.logo,
@@ -47,7 +47,7 @@ const LogoSlider = () => {
                 640: { slidesPerView: 3 },
                 768: { slidesPerView: 5 },
                 1024: { slidesPerView: 7 },
-                1280: { slidesPerView: 9 },
+                1280: { slidesPerView: 8 },
             }}
             spaceBetween={18}
             loop={true}

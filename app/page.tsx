@@ -129,6 +129,15 @@ export default function Home() {
                     <Image src={Spende} alt="Ö3-logo" className="mx-auto"/>
                 </motion.div>
 
+                <SectionHeader>Nebenprogramm</SectionHeader>
+                <SectionContent>
+                    <p>
+                        Zusätzlich zum Lauf selbst gibt es in der Stadthalle noch ein Extra-Programm in Form
+                        eines Dart-Turniers, organisiert von einer der ITP-Gruppen der 3AHIT.
+                    </p>
+                </SectionContent>
+
+
 
                 {/* Sponsors Section */}
                 <SectionHeader>Sponsoren</SectionHeader>
