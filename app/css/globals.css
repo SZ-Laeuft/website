@@ -9,6 +9,15 @@
   font-style: normal;
 }
 
+:root {
+  --navbar-height: 0px;
+}
+
+.main-content {
+  padding-top: var(--navbar-height);
+}
+
+
 body {
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
