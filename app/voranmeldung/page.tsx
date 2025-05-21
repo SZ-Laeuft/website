@@ -24,10 +24,18 @@ export default function VoranmeldungPage() {
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log("Form submitted:", formData);
-        // Daten an Backend schicken oder verarbeiten
+        const response = await fetch('/submit.php', {
+            method: 'POST',
+            body: new URLSearchParams(formData as never),
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+        });
+        if (response.ok) {
+            alert('Form submitted!');
+        } else {
+            alert('Submission failed.');
+        }
     };
 
 
