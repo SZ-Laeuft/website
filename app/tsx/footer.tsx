@@ -39,7 +39,7 @@ export default function Footer() {
                 © {new Date().getFullYear()} SZ-LÄUFT | Alle Rechte vorbehalten. |
                 <Link href="/privacy-policy" className="hover:text-[#00aaca] transition">Datenschutz</Link> |
                 <Link href="/terms-of-service" className="hover:text-[#00aaca] transition">Nutzungsbedingungen</Link> |
-                <Link href="/terms-of-service" className="hover:text-[#00aaca] transition">Impressum</Link>
+                <Link href="/legalnotice" className="hover:text-[#00aaca] transition">Impressum</Link>
             </div>
         </footer>
     );
