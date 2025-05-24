@@ -32,9 +32,9 @@ export default function VoranmeldungPage() {
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
         });
         if (response.ok) {
-            alert('Form submitted!');
+            alert('Erfolgreich angemeldet!');
         } else {
-            alert('Submission failed.');
+            alert('Es gab einen Fehler bei der Anmeldung. Bitte versuche es später erneut.');
         }
     };
 
