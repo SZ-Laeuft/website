@@ -179,17 +179,16 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="relative mt-6">
-                        <div className="relative mt-6">
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                        <div className="relative mt-6 flex justify-center">
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center w-max mx-auto">
                                 {[
-                                    {rounds: 15, emoji: "🏃‍♂️", reward: "Traubenzucker"},
-                                    {rounds: 25, emoji: "🥤", reward: "Getränk (Mind)"},
-                                    {rounds: 30, emoji: "🍎", reward: "Obst nach Wahl"},
-                                    {rounds: 40, emoji: "🍽️", reward: "Essen nach Wahl"}
+                                    {rounds: 0, emoji: "🏁", reward: "Lauf so viel du kannst!"},
+                                    {rounds: 5, emoji: "🍬", reward: "Traubenzucker"},
+                                    {rounds: 20, emoji: "🥤", reward: "Getränk nach Wahl"},
+                                    {rounds: 30, emoji: "🍽️", reward: "Essen nach Wahl"}
                                 ].map(({rounds, emoji, reward}) => (
                                     <div key={rounds} className="flex flex-col items-center">
-                                        <div
-                                            className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
+                                        <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
                                             <span className="text-4xl">{emoji}</span>
                                         </div>
                                         <p className="mt-2 text-sm"><strong>{rounds} Runden:</strong> {reward}</p>
