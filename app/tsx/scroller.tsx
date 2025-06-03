@@ -18,7 +18,7 @@ import LukIt from "@/public/pictures/lukit-logo-blue-rgb.svg"
 const logoSources = [
     { logo: LogoHAKHASITHTL, link: 'https://www.sz-ybbs.ac.at' },
     { logo: Uniqa, link: 'https://uniqa.at' },
-    { logo: CYGSCHEID, link: 'https://cyg-scheid.com' },
+    { logo: CYGSCHEID, link: 'https://cygscheid.at/' },
     { logo: Megaplex, link: 'https://megaplex.at' },
     { logo: EasyDrivers, link: 'https://easydrivers.at' },
     { logo: Wuesterstrom, link: 'https://wuesterstrom.at' },
