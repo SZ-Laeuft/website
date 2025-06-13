@@ -25,6 +25,9 @@ import MCDonalds from "@/public/pictures/MCDonald.png";
 import mediastyle from "@/public/pictures/mediastyle.png";
 import sonnentor from "@/public/pictures/sonnentor.png";
 import steinecker from "@/public/pictures/steinecker.jpg";
+import poechaker from "@/public/pictures/poechacker.png";
+import becksteiner from "@/public/pictures/Becksteiner.png";
+import mv_ybbs from "@/public/pictures/mv_ybbs.png";
 
 
 const logoSources = [
@@ -46,7 +49,10 @@ const logoSources = [
     { logo: MCDonalds, link: 'https://mcdonalds.at' },
     { logo: mediastyle, link: 'https://mediastyle.at' },
     { logo: sonnentor, link: 'https://sonnentor.at' },
-    { logo: steinecker, link: 'https://steinecker.at' }
+    { logo: steinecker, link: 'https://steinecker.at' },
+    { logo: poechaker, link: 'https://www.pöchhacker.com/' },
+    { logo: becksteiner, link: 'https://becksteiner.at' },
+    { logo: mv_ybbs, link: 'https://www.mvybbs.at/' }
 ];
 
 
